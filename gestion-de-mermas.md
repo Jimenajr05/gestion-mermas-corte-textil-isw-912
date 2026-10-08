@@ -12,19 +12,22 @@
 
 | Versión | Semana | Fecha | Descripción |
 |---|---|---|---|
-| 1.0 | [Clase 1](https://campus.utn.ac.cr/course/section.php?id=178696) | 16/09/2026 | Entregable 1: idea inicial del proyecto y creación del repositorio. |
-| 2.0 | [Clase 2](https://campus.utn.ac.cr/course/section.php?id=185720) | 23/09/2026 | Entregable 2: Trabajo #1, definición del proyecto (problema, propuesta, método de optimización, tipo de IA y objetivos). |
-| 3.0 | [Clase 4](https://campus.utn.ac.cr/course/section.php?id=190460) | 07/10/2026 | Entregable 3: Trabajo #2, taller de interesados (registro, mapa Poder-Interés, preguntas de análisis y enfoque híbrido). Documentación unificada en un solo archivo y carpeta `imagenes`. |
+| 1.0 | Clase 1 | 16/09/2026 | Presentación de la idea inicial del proyecto y preparación del repositorio para organizar la documentación del trabajo. |
+| 2.0 | Clase 2 | 23/09/2026 | Desarrollo de la definición del proyecto, con una descripción del problema, la solución propuesta y los objetivos que orientan su desarrollo. |
+| 3.0 | Clase 3 | 30/09/2026 | Identificación y análisis de los interesados del proyecto, considerando su participación e influencia, e integración de los avances en la documentación. |
+| 4.0 | Clase 4 | 07/10/2026 | Definición de la organización y las responsabilidades del equipo, junto con el análisis de los factores del entorno que pueden influir en el proyecto. |
 
 ## Contenido
 
 - [Historial de versiones](#historial-de-versiones)
-- [Trabajo #1: Definición del proyecto](#trabajo-1-definición-del-proyecto)
-- [Trabajo #2: Taller de interesados del proyecto](#trabajo-2-taller-de-interesados-del-proyecto)
+- [Definición del proyecto](#trabajo-1-definición-del-proyecto)
+- [Taller de interesados del proyecto](#trabajo-2-taller-de-interesados-del-proyecto)
+- [Definición del Scrum Team](#definición-del-scrum-team)
+- [Análisis de entorno](#análisis-de-entorno-eefs-e-interesados)
 
 ---
 
-## Trabajo #1: Definición del proyecto
+## Definición del proyecto
 
 **Fecha:** 23 de septiembre de 2026
 
@@ -46,11 +49,15 @@ El problema puede presentarse tanto en empresas de confección de gran volumen c
 
 ### Proyecto propuesto
 
+#### Descripción general
+
 Desarrollar una plataforma web adaptable a dispositivos móviles que permita gestionar y optimizar el uso de tela durante la planificación de producción de prendas.
 
 El sistema permitirá registrar los rollos de tela disponibles, sus dimensiones, características y cantidades requeridas para una producción. También permitirá cargar o registrar los patrones de las prendas y las cantidades necesarias de cada pieza.
 
 Mediante algoritmos de optimización e Inteligencia Artificial (principalmente un algoritmo genético, apoyado en cálculos geométricos y en una heurística de colocación), el sistema analizará diferentes posibilidades de distribución de los patrones sobre la tela y propondrá una alternativa que busque maximizar el aprovechamiento del material y reducir el desperdicio.
+
+#### Visualización de resultados
 
 La plataforma mostrará visualmente la distribución propuesta y proporcionará información como:
 
@@ -62,27 +69,35 @@ La plataforma mostrará visualmente la distribución propuesta y proporcionará 
 - Estimación del costo asociado al material desperdiciado.
 - Historial de producciones y desperdicios.
 
+#### Usuarios de la plataforma
+
 Además, contará con diferentes tipos de usuarios para permitir que pueda ser utilizada por emprendimientos, marcas de ropa, talleres y empresas de confección de mayor escala.
 
-### Incorporación de una prenda nueva (incluidas las de forma poco convencional)
+#### Registro de prendas y patrones
 
 Cuando un cliente nuevo quiere agregar una prenda que el sistema aún no conoce, el sistema no depende de un catálogo cerrado. Cada pieza de la prenda se representa internamente como un contorno geométrico (un polígono con muchos puntos), lo que permite manejar desde un rectángulo hasta una forma curva, asimétrica o irregular. Para que cualquier cliente pueda cargar sus prendas, el sistema ofrece cuatro métodos:
+
+##### Métodos de carga
 
 - Plantillas con medidas. Para formas comunes (rectángulos, trapecios, círculos, mangas, cuellos, bolsillos), el usuario elige una plantilla e ingresa las medidas. Es el método más rápido para prendas sencillas.
 - Importación de archivos de patrones. Si el cliente ya diseña sus patrones en programas de patronaje o diseño (como los que exportan archivos DXF o SVG), los sube directamente y el sistema extrae el contorno de cada pieza. Es el método más exacto para formas complejas.
 - Fotografía o escaneo del patrón en papel. Para talleres y emprendimientos que usan moldes de papel, el usuario coloca el molde sobre un fondo que contraste, junto a una regla o marca de referencia, y lo fotografía con el celular. Un módulo de visión por computadora detecta el contorno, lo convierte a las medidas reales usando la referencia y lo muestra al usuario para que lo revise y ajuste.
 - Editor de dibujo. El usuario dibuja la pieza con puntos y curvas, o corrige un contorno importado o detectado. Permite crear formas exóticas desde cero o ajustar detalles.
 
+##### Proceso de registro
+
 Sea cual sea el método, el proceso para agregar una prenda nueva sigue estos pasos:
 
-- El cliente crea la prenda (nombre, tipo y tallas) y agrega cada una de sus piezas por alguno de los cuatro métodos.
-- El sistema valida la geometría de cada pieza: que el contorno esté cerrado, que no se cruce consigo mismo, que la escala sea correcta y que la pieza quepa en el ancho de la tela disponible. Si hay un problema, muestra un mensaje claro para corregirlo.
-- El cliente indica las restricciones de cada pieza: dirección del hilo, rotaciones permitidas (ninguna, 180 grados o libre), margen de costura, si la pieza se corta en espejo (izquierda y derecha) y si la tela tiene sentido, pelo o estampado.
-- El cliente define las cantidades por pieza y por talla. Para otras tallas, puede cargar cada talla o aplicar una regla de escalado (gradación) sobre la talla base.
-- El sistema muestra una vista previa de las piezas y ejecuta una prueba de distribución sobre una tela de ejemplo para confirmar que la prenda funciona.
-- El cliente aprueba la prenda y esta se guarda en su biblioteca, con control de versiones, para reutilizarla en futuras órdenes de producción sin volver a cargarla.
+1. El cliente crea la prenda (nombre, tipo y tallas) y agrega cada una de sus piezas por alguno de los cuatro métodos.
+2. El sistema valida la geometría de cada pieza: que el contorno esté cerrado, que no se cruce consigo mismo, que la escala sea correcta y que la pieza quepa en el ancho de la tela disponible. Si hay un problema, muestra un mensaje claro para corregirlo.
+3. El cliente indica las restricciones de cada pieza: dirección del hilo, rotaciones permitidas (ninguna, 180 grados o libre), margen de costura, si la pieza se corta en espejo (izquierda y derecha) y si la tela tiene sentido, pelo o estampado.
+4. El cliente define las cantidades por pieza y por talla. Para otras tallas, puede cargar cada talla o aplicar una regla de escalado (gradación) sobre la talla base.
+5. El sistema muestra una vista previa de las piezas y ejecuta una prueba de distribución sobre una tela de ejemplo para confirmar que la prenda funciona.
+6. El cliente aprueba la prenda y esta se guarda en su biblioteca, con control de versiones, para reutilizarla en futuras órdenes de producción sin volver a cargarla.
 
-Tipos de forma que el sistema debe soportar:
+##### Formas y características admitidas
+
+El sistema debe soportar los siguientes tipos de formas y características:
 
 - Formas rectas y geométricas: rectángulos, trapecios y triángulos.
 - Formas curvas: cuellos, sisas, mangas, bajos redondeados y círculos completos o medios círculos.
@@ -94,7 +109,7 @@ Tipos de forma que el sistema debe soportar:
 
 El algoritmo de distribución trabaja con estos contornos reales, sin simplificarlos a cajas rectangulares, y considera las restricciones definidas para cada pieza. La Inteligencia Artificial (el algoritmo genético) interviene en la búsqueda y recomendación de las mejores alternativas de distribución; la detección del contorno a partir de fotografías se realiza con técnicas de visión por computadora.
 
-### Método de optimización: cómo se acomodan las piezas en la tela
+#### Método de optimización: cómo se acomodan las piezas en la tela
 
 Acomodar piezas irregulares sobre una tela sin desperdiciar es un problema conocido como nesting (empaquetado bidimensional de formas irregulares). No tiene una solución exacta que se calcule en un tiempo razonable, por lo que se resuelve con heurísticas y metaheurísticas, que son técnicas de Inteligencia Artificial clásica. El sistema propone una solución de buena calidad, no necesariamente la óptima, y la compara con otras alternativas. La solución se organiza en cuatro capas:
 
@@ -106,13 +121,17 @@ Acomodar piezas irregulares sobre una tela sin desperdiciar es un problema conoc
   - Proceso: se genera una población de distribuciones al azar, se evalúa cada una con la colocación Bottom-Left, se combinan las mejores (cruce), se introducen cambios aleatorios (mutación) y se repite durante muchas generaciones hasta que la mejora se estabiliza.
   - Herramientas: la librería DEAP de Python para el algoritmo genético. Existen proyectos abiertos de nesting, como SVGnest y Deepnest, que usan un enfoque similar (NFP más algoritmo genético), lo que respalda la viabilidad de la técnica. Como alternativas de la misma familia se pueden evaluar el recocido simulado y la búsqueda tabú.
 
-### Tipo de Inteligencia Artificial utilizada
+#### Tipo de Inteligencia Artificial utilizada
 
 La Inteligencia Artificial de este proyecto es de tipo búsqueda y optimización (computación evolutiva), una rama reconocida de la IA. No se utilizan modelos de lenguaje ni redes neuronales, y el algoritmo genético no requiere datos de entrenamiento: optimiza cada orden de producción desde cero, lo que lo hace adecuado para un problema donde cada caso es distinto. El aprendizaje automático con datos históricos queda como una ampliación futura, una vez que el sistema haya acumulado información de producciones.
 
-- Visión por computadora y aprendizaje automático. Para cargar patrones desde una fotografía se utiliza OpenCV (segmentación y detección de contornos), y como opción más avanzada un modelo de segmentación. En una etapa posterior, con el historial de producciones, un modelo de aprendizaje automático podría predecir el desperdicio esperado o sugerir un buen orden inicial para prendas similares.
+##### Visión por computadora y ampliaciones futuras
 
-Cómo se comprobará que funciona: se comparará el porcentaje de aprovechamiento obtenido por el algoritmo genético contra una línea base simple (colocar las piezas de mayor a menor sin optimizar) y contra un acomodo manual, usando los mismos patrones y la misma tela. También se podrán utilizar conjuntos de datos públicos de referencia para este tipo de problema, como los del grupo ESICUP, para comparar con resultados conocidos.
+Para cargar patrones desde una fotografía se utiliza OpenCV (segmentación y detección de contornos), y como opción más avanzada un modelo de segmentación. En una etapa posterior, con el historial de producciones, un modelo de aprendizaje automático podría predecir el desperdicio esperado o sugerir un buen orden inicial para prendas similares.
+
+#### Evaluación de resultados
+
+Se comparará el porcentaje de aprovechamiento obtenido por el algoritmo genético contra una línea base simple (colocar las piezas de mayor a menor sin optimizar) y contra un acomodo manual, usando los mismos patrones y la misma tela. También se podrán utilizar conjuntos de datos públicos de referencia para este tipo de problema, como los del grupo ESICUP, para comparar con resultados conocidos.
 
 ### Valor esperado
 
@@ -136,7 +155,7 @@ Desarrollar una plataforma web para la planificación y optimización del corte 
 
 ---
 
-## Trabajo #2: Taller de interesados del proyecto
+## Taller de interesados del proyecto
 
 ### Identificación y registro de interesados
 
@@ -225,3 +244,28 @@ El alcance general fue definido desde el Trabajo #1 y el curso tiene una fecha d
 Sin embargo, el módulo de optimización presenta mayor incertidumbre. El algoritmo genético, la heurística de colocación y la visión por computadora para interpretar patrones a partir de una fotografía requieren pruebas, ajustes y retroalimentación. Es posible que debamos modificar algunos aspectos conforme obtengamos resultados de las pruebas con distintos tipos de piezas.
 
 Por estas características, el enfoque híbrido se adapta al contexto del proyecto: permite mantener una planificación estable para los elementos definidos y, al mismo tiempo, utilizar ciclos de prueba y adaptación en las partes que presentan mayor incertidumbre.
+
+---
+
+## Definición del Scrum Team
+
+| Rol | Integrante asignada (propuesta) | Responsabilidades durante las 14 semanas |
+|---|---|---|
+| Product Owner | María Jimena Jara Rojas | Definir y comunicar la meta del producto, ordenar el Product Backlog y priorizar las funciones según las necesidades de los usuarios y el tiempo disponible |
+| Scrum Master | María Fernanda Sibaja Campos | Promover la aplicación de Scrum, facilitar los eventos cuando sea necesario, ayudar a resolver impedimentos y apoyar la mejora de la efectividad del equipo |
+| Developers | María Jimena Jara Rojas y María Fernanda Sibaja Campos | Analizar, diseñar, programar, integrar, probar y documentar la solución; organizar el trabajo técnico para alcanzar la meta de cada Sprint y asegurar la calidad del incremento |
+
+## Análisis de entorno (EEFs)
+
+### Factores ambientales que impactan el proyecto
+
+| Factor ambiental | Condición conocida o por verificar | Impacto en la solución | Respuesta prevista |
+|---|---|---|---|
+| Calendario y requisitos académicos | El trabajo se realizará durante las 14 semanas del curso; confirmar fechas y criterios de evaluación | Limitan el tiempo y condicionan los entregables | Priorizar las funciones y ajustar la planificación al calendario oficial |
+| Infraestructura tecnológica disponible | Verificar capacidad de las computadoras, conexión y alojamiento disponible | Puede limitar la ejecución del algoritmo genético y las demostraciones | Realizar pruebas de rendimiento en los equipos disponibles y evaluar ejecución local |
+| Acceso a usuarios del sector textil | Confirmar disponibilidad de dueños, patronistas y operarios para entrevistas y pruebas | Condiciona la validación de necesidades y resultados | Coordinar su participación y documentar las limitaciones si no se consigue acceso |
+| Disponibilidad y uso de patrones | Confirmar formatos, medidas y permisos para utilizar patrones reales | Determina los casos de prueba y las posibilidades de publicar ejemplos | Utilizar material autorizado o casos sintéticos identificados como tales |
+| Cultura y procesos del taller | Investigar cómo se planifican los cortes y la disposición a incorporar herramientas digitales | Influye en la facilidad de uso y aceptación del sistema | Validar el flujo de trabajo con usuarios antes de asumir necesidades específicas |
+| Distribución geográfica y conectividad | Modalidad de trabajo del equipo y ubicación de los usuarios por confirmar | Puede dificultar coordinación, entrevistas y demostraciones | Acordar canales de comunicación y alternativas de reunión |
+| Privacidad y confidencialidad | Verificar las condiciones aplicables a datos personales y patrones comerciales que se compartan | Puede restringir acceso, almacenamiento y publicación de información | Minimizar datos y acordar permisos antes de incorporar información del taller |
+| Recursos económicos y licencias disponibles | Presupuesto y acceso a servicios por confirmar | Condicionan herramientas, alojamiento y despliegue | Priorizar recursos disponibles y evaluar costos antes de contratar servicios |
