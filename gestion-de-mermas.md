@@ -5,7 +5,7 @@
 **Proyecto:** Optimización del corte textil y reducción del desperdicio de tela
 
 **Estudiantes:** María Jimena Jara Rojas y María Fernanda Sibaja Campos  
-**Profesora:** Yesenia Calvo Araya  
+**Profesores:** Yesenia Calvo Araya  / Deiver Cubero 
 **Sede:** Sede Regional de San Carlos
 
 ## Historial de versiones
@@ -19,6 +19,7 @@
 | 5.0 | Clase 5 | 14/10/2026 | Alcance, historias de usuario con criterios de aceptación y Definition of Done. |
 | 6.0 | Clase 6 | 21/10/2026 | Matriz de estimación, cronograma de entregas y presupuesto. |
 | 7.0 | Clase 7 | 01/11/2026 | Plan de comunicaciones, tablero en Jira, replanificación a 4 Sprints y 11 historias, y DoD v1.1. |
+| 8.0 | Clase 8 | 08/11/2026 | Matriz de riesgos, plan de mitigación, plan de adquisiciones y acciones de mitigación en el Sprint Backlog. |
 
 ## Contenido
 
@@ -37,6 +38,7 @@
 - [Estimación de subtareas del Sprint 1](#estimación-de-subtareas-del-sprint-1)
 - [Matriz de estimación](#matriz-de-estimación)
 - [Cronograma de entregas y costos](#cronograma-de-entregas-y-costos)
+- [Riesgos y adquisiciones](#riesgos-y-adquisiciones)
 - [Plan de comunicaciones y tablero de trabajo](#plan-de-comunicaciones-y-tablero-de-trabajo)
 
 ---
@@ -997,8 +999,144 @@ Resultados visuales y órdenes de producción
 
 ---
 
-## Definition of Done v1.1
-**Sección 09 · Semana 5**
+## Riesgos y adquisiciones
+**Sección 08 · Semana 7**
+
+Esta sección amplía los riesgos iniciales del acta (complejidad geométrica, sobreestimación de capacidad, falta de patrones reales e integración tardía) con lo que revelaron la matriz de estimación, el cronograma y la Definition of Done. Registra además las dependencias externas que sostienen el prototipo. Las calificaciones se reevalúan al registrar la Review del Sprint 1 y la velocidad observada.
+
+### Escala de calificación
+
+| Valor | Probabilidad | Impacto en el proyecto |
+|---:|---|---|
+| 1 | Baja (menos de 20 %) | Se absorbe dentro del Sprint |
+| 2 | Media (20 % a 50 %) | Obliga a reajustar el Sprint Backlog o una tarea |
+| 3 | Alta (más de 50 %) | Obliga a retirar o dividir una historia, o compromete la entrega del 07/12 |
+
+**Prioridad = probabilidad × impacto.** De 6 a 9 es zona alta (🟥, se atiende primero); de 3 a 4, vigilar (🟨); de 1 a 2, aceptar (🟩). Como el proyecto no tiene patrocinador ni contratos, la estrategia de transferir se sustituye por consultar a la profesora cuando el riesgo afecta un compromiso académico.
+
+### Matriz de Riesgos
+
+Categorías: técnico, equipo, alcance, tercero y negocio.
+
+| ID | Tipo | Categoría | Descripción | P | I | Prior. | Zona | Dueño | Origen |
+|---|---|---|---|---:|---:|---:|---|---|---|
+| R-01 | Amenaza | Equipo | Si la velocidad real es menor que la hipótesis de 19 puntos, los Sprints cierran con historias sin DoD y los 66 puntos no caben al 07/12. La holgura es de solo 4 puntos. | 3 | 3 | 9 | 🟥 | Jimena | Matriz de estimación; acta |
+| R-02 | Amenaza | Equipo | Si una de nosotras pierde disponibilidad (exámenes, otros cursos, enfermedad) o es la única que conoce un módulo, baja la capacidad del Sprint y se detiene la tarea que depende de ella. | 2 | 3 | 6 | 🟥 | Fernanda | Matriz de estimación; restricción de personal |
+| R-03 | Amenaza | Técnico | Si la colocación Bottom-Left con polígonos reales, en especial la pieza cóncava, resulta más difícil de lo estimado, HU-01 y HU-03 se extienden y se retrasa la cadena colocación → algoritmo genético → web. | 2 | 3 | 6 | 🟥 | Fernanda | Acta (complejidad geométrica) |
+| R-04 | Amenaza | Técnico | Si el algoritmo genético no mejora la línea base, o evaluar cada individuo con Shapely es tan lento que una ejecución de 20 piezas supera los 30 s (RNF-03), la comparación del objetivo 3 no muestra el valor de la IA. | 2 | 3 | 6 | 🟥 | Jimena | HU-05, HU-08 y HU-09 |
+| R-05 | Amenaza | Técnico | Si el motor y la web se desarrollan sin un formato de datos acordado, los problemas aparecen en el hito de integración del 25/11 y no queda tiempo de corregirlos en el Sprint 4. | 2 | 3 | 6 | 🟥 | Fernanda | Acta (integración tardía) |
+| R-06 | Amenaza | Tercero | Si no se consigue un taller ni un patronista real para una Review, las necesidades de los interesados siguen siendo hipótesis y la validación queda solo con casos sintéticos. | 3 | 2 | 6 | 🟥 | Jimena | Acta (falta de patrones reales); EEF de acceso a usuarios |
+| R-08 | Amenaza | Alcance | Si el informe, el Expediente y la demo se dejan para el final, compiten con el desarrollo en los 9 días hábiles del Sprint 4 y la entrega se apresura. | 2 | 3 | 6 | 🟥 | Fernanda | Matriz de estimación (Sprint 4) |
+| R-07 | Amenaza | Alcance | Si la profesora o un interesado pide un cambio a mitad de Sprint, se desordena el Sprint Backlog y se compromete el Sprint Goal. | 2 | 2 | 4 | 🟨 | Jimena | Mecanismo de cambios |
+| R-09 | Amenaza | Tercero | Si cambia la versión de Shapely, DEAP o del framework web, el sistema no se ejecuta desde una copia limpia y falla el criterio 5 de la DoD o la demo. | 1 | 3 | 3 | 🟨 | Jimena | DoD v1.1 |
+| R-10 | Amenaza | Tercero | Si se pierde código, queda un conflicto de ramas sin resolver o GitHub o Jira no están disponibles, se pierde trabajo o evidencia. | 1 | 3 | 3 | 🟨 | Fernanda | Tablero de trabajo |
+| R-11 | Amenaza | Técnico | Si la demo falla por el equipo, una ejecución lenta o un imprevisto, no se puede mostrar el incremento el 07/12. | 1 | 3 | 3 | 🟨 | Fernanda | Restricción de infraestructura |
+| R-12 | Amenaza | Técnico | Si la semilla no reproduce el resultado, se incumple RNF-01 y la comparación no es verificable. | 1 | 2 | 2 | 🟩 | Fernanda | RNF-01 |
+| R-13 | Amenaza | Negocio | Si se usan patrones o datos reales sin autorización, hay un problema de confidencialidad. | 1 | 1 | 1 | 🟩 | Jimena | EEF de privacidad |
+| O-01 | Oportunidad | Equipo | Si la velocidad observada llega a 21 puntos, sobran 12 puntos de capacidad para más casos de prueba, refinamiento y documentación. | 1 | 3 | 3 | — | Jimena | Cronograma (escenario favorable) |
+| O-02 | Oportunidad | Tercero | Si un taller o patronista real participa, el flujo se valida con retroalimentación real. | 2 | 2 | 4 | — | Jimena | EEF de acceso a usuarios |
+
+### Mapa de calor
+
+| Probabilidad \ Impacto | 1 · Bajo | 2 · Medio | 3 · Alto |
+|---|---|---|---|
+| **3 · Alta** | 🟨 — | 🟥 **R-06** | 🟥 **R-01** |
+| **2 · Media** | 🟩 — | 🟨 **R-07** | 🟥 **R-02, R-03, R-04, R-05, R-08** |
+| **1 · Baja** | 🟩 **R-13** | 🟩 **R-12** | 🟨 **R-09, R-10, R-11** |
+
+De las 13 amenazas, 7 están en zona alta, 4 en vigilancia y 2 en aceptación. Cinco de las siete caen en probabilidad media e impacto alto, porque casi todo lo que puede fallar depende del tiempo y de la capacidad de dos personas. El riesgo más alto es R-01: toda la planificación descansa en una velocidad que todavía es una hipótesis. Las oportunidades no entran en el mapa; se atienden en el plan.
+
+### Plan de Mitigación
+
+#### Riesgos de zona alta
+
+| Riesgo | Estrategia | Acciones (ítem del backlog) | Disparador | Dueño |
+|---|---|---|---|---|
+| R-01 | Mitigar | Al cerrar cada Sprint se registran los puntos con DoD y se recalcula el plan (proceso ya definido en la velocidad inicial y su actualización). Si la velocidad es menor de 17, se retira HU-10 consultando antes a la profesora. | Velocidad observada menor de 17, o pendiente real mayor que el previsto en el burndown | Jimena |
+| R-02 | Mitigar | **M-04:** sesión de traspaso de 1 hora por cada módulo crítico (colocación y algoritmo genético), con instrucciones de ejecución y prueba actualizadas. Cada Planning revisa la disponibilidad real. | Una de nosotras anuncia menos de 15 h semanales, o una tarea pasa más de 3 días en "En curso" sin avance | Fernanda |
+| R-03 | Mitigar | Las pruebas de rectángulos, trapecios y pieza cóncava (T-07) quedan como regresión. **M-03** (condicional): spike de máximo 4 h si se activa el disparador. | Una tarea de colocación excede su estimación en más del 50 % | Fernanda |
+| R-04 | Mitigar | **M-01:** spike de rendimiento. Se mide el tiempo de evaluar un individuo con 20 piezas y se fijan población y generaciones por defecto que quepan en 30 s. | Una ejecución de 20 piezas supera los 30 s con los parámetros por defecto, o la mejora sobre la línea base es menor de 1 % en los tres casos | Jimena |
+| R-05 | Mitigar | **M-02:** documentar en el repositorio el formato de datos entre motor y web. Se mantienen el hito del 25/11 y la prueba de integración con semilla fija de la DoD. | Formato no acordado al iniciar el Sprint 3 (11/11), o prueba de integración fallida | Fernanda |
+| R-06 | Mitigar | **M-05:** enviar a al menos un taller o patronista un resumen de una página y pedir 30 minutos en la Review del 25/11 o una devolución escrita. | Sin contacto confirmado al 18/11 | Jimena |
+| R-08 | Mitigar | **M-06:** esqueleto del informe final y lista de evidencias antes del 25/11. El Expediente se actualiza en cada Sprint y no al final. | Sin esqueleto del informe al 25/11 | Fernanda |
+
+| Riesgo | Contingencia | Respaldo | Revisión | Riesgo residual |
+|---|---|---|---|---|
+| R-01 | Aplicar el escenario conservador (17) y retirar HU-10 (5 puntos), que se declara pendiente | Proteger el Product Goal (HU-01 a HU-05, HU-08, HU-09 y HU-11) y declarar pendiente lo demás con evidencia; la DoD no se reduce | 11/11 y 25/11 | Medio: la holgura sigue siendo de pocos puntos |
+| R-02 | La otra integrante asume la tarea crítica gracias al traspaso y se aplica el escenario conservador | Retirar HU-10 y consultar a la profesora sobre el compromiso del Sprint | Cada Planning | Medio: la capacidad depende de dos personas |
+| R-03 | Dividir la historia si supera 8 puntos; construir primero con rectángulos y trapecios y dejar la pieza cóncava al final | Declarar la pieza cóncava como limitación y presentar los casos con formas convexas, previa consulta a la profesora porque cambia el criterio de éxito 1 | 11/11 | Bajo |
+| R-04 | Reducir población y generaciones, usar el límite de tiempo y devolver la mejor distribución válida; HU-09 conserva la línea base y presenta un empate como tal | Informar el resultado real, sin prometer ahorro (criterio de éxito 4), y analizar las causas en el informe | 11/11 | Medio: el resultado depende del algoritmo y no se puede garantizar |
+| R-05 | Ejecutar el motor por consola con los mismos datos mientras se corrige la integración | Mostrar el flujo con casos precargados desde archivos y declarar lo pendiente | 11/11 y 25/11 | Bajo |
+| R-06 | Presentar los casos sintéticos como la validación y declarar la limitación en el informe, como ya prevé el Expediente | Pedir a la profesora su criterio sobre la representatividad de los casos | 18/11 y 25/11 | Medio: la validación real puede no lograrse |
+| R-08 | Retirar HU-10 del Sprint 4, lo que libera cerca de 13,5 h para el cierre | Reducir el informe a la estructura exigida y declarar los pendientes | 25/11 | Medio |
+
+#### Riesgos de vigilancia y aceptación
+
+| Riesgo | Estrategia | Acción | Disparador | Contingencia | Revisión | Dueño |
+|---|---|---|---|---|---|---|
+| R-07 | Mitigar | Se aplica el mecanismo de cambios: el cambio se registra y entra en el siguiente Sprint, sin ampliar el actual | Cambio solicitado durante un Sprint | Evaluar el impacto en alcance, fecha y costo y consultar a la profesora si afecta un compromiso | Cada Review | Jimena |
+| R-09 | Mitigar | Versiones fijadas en el archivo de dependencias y verificación en copia limpia en la computadora de la otra integrante (criterio 5 de la DoD) | Falla en una copia limpia | Volver a la versión fijada anterior | Cada Review | Jimena |
+| R-10 | Mitigar | Ramas por historia, PR revisado, copia local del repositorio en ambas computadoras y tabla del Sprint Backlog versionada como copia del tablero | Conflicto sin resolver más de 24 h, o GitHub o Jira no disponibles | Restaurar desde la copia local y trabajar con la tabla versionada | Cada Review | Fernanda |
+| R-11 | Mitigar | **M-07:** ensayo en el equipo de la demo, casos precalculados y capturas o video de respaldo | Ensayo fallido | Mostrar los resultados precalculados y las capturas | 07/12, antes de la demo | Fernanda |
+| R-12 | Aceptar | Se usan las pruebas de reproducibilidad que la DoD ya exige en HU-01, HU-05 y HU-08 | Dos ejecuciones con la misma semilla difieren | Corregir antes de aceptar la historia | Retrospective | Fernanda |
+| R-13 | Aceptar | Solo casos sintéticos o material con autorización escrita | Se recibe un patrón real | No usarlo hasta contar con la autorización | Retrospective | Jimena |
+| O-01 | Aceptar la oportunidad | Los puntos sobrantes se dedican a más casos de prueba, refinamiento y documentación; no se agregan funciones sin aprobación de la profesora | Velocidad observada de 21 o más | — | Cada Review | Jimena |
+| O-02 | Mejorar | Se aumenta su probabilidad con el mismo esfuerzo de M-05: contactar pronto y llevar una demostración corta | Un taller o patronista acepta participar | — | 18/11 y 25/11 | Jimena |
+
+### Acciones de mitigación en el Sprint Backlog
+
+Se agregan al Sprint Backlog y al tablero de Jira como subtareas con la etiqueta `riesgo`, sin modificar las tareas T-01 a T-18 ni las historias. Se estiman en horas y no suman puntos de historia ni velocidad.
+
+| Ítem | Riesgo | Acción | Sprint | Responsable | Horas | Capacidad | Estado | Evidencia esperada |
+|---|---|---|---|---|---:|---|---|---|
+| M-01 | R-04 | Spike de rendimiento del algoritmo genético con 20 piezas y parámetros por defecto | Sprint 2, hasta el 11/11 | Jimena | 3 | Holgura del Sprint 2 (3 puntos ≈ 8,1 h) | Por hacer | Tabla de tiempos y parámetros elegidos |
+| M-02 | R-05 | Documentar el formato de datos entre motor y web | Sprint 2, hasta el 11/11 | Fernanda | 2 | Holgura del Sprint 2 | Por hacer | Documento en el repositorio |
+| M-03 | R-03 | Spike de geometría de máximo 4 h, solo si se activa el disparador | Sprint 2 o 3 | Fernanda | 0 a 4 | Reserva de contingencia | Condicional | Registro del problema y su solución |
+| M-04 | R-02 | Sesiones de traspaso de los módulos de colocación y algoritmo genético | Sprint 3 | Fernanda | 2 | Holgura del Sprint 3 (1 punto ≈ 2,7 h) y reserva | Por hacer | Instrucciones actualizadas y registro de la sesión |
+| M-05 | R-06, O-02 | Solicitud a un taller o patronista y demostración corta | Sprint 3, antes del 18/11 | Jimena | 2 | Holgura del Sprint 3 y reserva | Por hacer | Mensaje enviado y respuesta registrada |
+| M-06 | R-08 | Esqueleto del informe final y lista de evidencias | Sprint 3, antes del 25/11 | Fernanda | 2 | Reserva | Por hacer | Esqueleto en el repositorio |
+| M-07 | R-11 | Ensayo de la demo y material de respaldo | Sprint 4 | Fernanda | 2 | Dentro de las 12 h de cierre | Por hacer | Capturas o video de respaldo |
+
+**Efecto en capacidad y costo:** M-01, M-02, M-04, M-05 y M-06 suman 11 h, equivalentes a unos 4 puntos, es decir, toda la holgura del cronograma (10,8 h). Los ítems del Sprint 2 (5 h) caben en su holgura. En el Sprint 3 los tres ítems suman 6 h frente a 2,7 h de holgura, y las 3,3 h restantes se cargan a la reserva (₡9.900). Con M-03 en su máximo (₡12.000), el uso previsto de la reserva es de ₡21.900 de los ₡141.600, con un saldo de ₡119.700. El cálculo es conservador porque no descuenta las horas que M-06 saca del cierre. Cada uso real se registra con fecha, causa, importe y saldo, como indica el seguimiento de costos. Como la holgura queda agotada, retirar HU-10 sigue siendo la respuesta de último recurso.
+
+### Plan de adquisiciones
+
+El prototipo no contrata proveedores ni servicios de pago: todo se resuelve con software de código abierto o gratuito y ejecución local, lo que coincide con el ₡0 de herramientas del presupuesto. Por eso no hay contratos de precio fijo, costo reembolsable ni tiempo y materiales. El equipo construye el núcleo del proyecto (colocación, aptitud, indicadores y comparación) e integra lo estándar (geometría, operadores genéticos, web, almacenamiento y control de versiones).
+
+| Elemento | Decisión | Tipo de acuerdo | Costo | Riesgo | Plan de salida | Responsable |
+|---|---|---|---:|---|---|---|
+| Motor de colocación, aptitud e indicadores | Construir | Código propio | ₡0 | R-03, R-04 | No aplica | Ambas |
+| Shapely (geometría) | Integrar | Licencia de código abierto; se verifica la de la versión fijada | ₡0 | R-03, R-09 | Aislar las operaciones geométricas en un módulo propio; si la librería falla, usar pyclipper (ya considerada en la visión del producto) o cálculos propios para los casos rectilíneos | Jimena |
+| DEAP (algoritmo genético) | Integrar | Licencia de código abierto; se verifica la de la versión fijada | ₡0 | R-04, R-09 | Aislar el algoritmo en un módulo propio; los operadores de HU-05 (cruce de orden, intercambio y torneo) se pueden implementar sin la librería | Jimena |
+| Framework web (el elegido en HU-04) | Integrar | Licencia de código abierto | ₡0 | R-05, R-09 | El motor es independiente de la web y se ejecuta por consola, así que se puede mostrar sin interfaz | Fernanda |
+| Base de datos local | Integrar | Incluida en el entorno local | ₡0 | R-09 | Exportar los datos a JSON o CSV | Fernanda |
+| GitHub (repositorio) | Servicio gratuito | Términos de uso del servicio | ₡0 | R-10 | Copia local en ambas computadoras; el repositorio se puede migrar a otro servicio de Git | Fernanda |
+| Jira (tablero MER) | Servicio | Términos de uso; el plan vigente no consta en el Expediente y se verifica | Por verificar | R-10 | La tabla del Sprint Backlog ya está versionada en el repositorio; se exporta el tablero al cierre de cada Sprint | Jimena |
+
+Si hay que reemplazar una dependencia, se compara con estos criterios (100 puntos): compatibilidad con Python y con nuestros equipos (25), costo (25), licencia (20), documentación y mantenimiento activo (20) y curva de aprendizaje (10). Antes de adoptarla se evalúa con un spike y la decisión se anota en el registro de seguimiento.
+
+### Seguimiento de riesgos
+
+| Qué | Cuándo | Quién |
+|---|---|---|
+| Revisar los disparadores de los riesgos de zona alta y mostrar los impedimentos en el tablero | Diario, en el Daily Scrum | Ambas |
+| Reevaluar probabilidad e impacto de los riesgos de zona alta y de vigilancia | En cada Sprint Review (11/11, 25/11 y 07/12) | Fernanda |
+| Registrar riesgos nuevos, cerrados y residuales | En cada Retrospective | Ambas |
+| Recalcular velocidad y burndown (R-01) | Al cierre de cada Sprint | Jimena |
+| Avisar a la profesora si un riesgo de zona alta se materializa | El mismo día, por correo institucional | Fernanda |
+
+Un riesgo que se materializa pasa al registro de seguimiento como incidencia, con su acción y su evidencia. Si la respuesta cambia el alcance, la fecha o el costo, se sigue el mecanismo de cambios del Expediente.
+
+### Relación con otras secciones
+
+| Riesgo | Se vincula con |
+|---|---|
+| R-01, R-02, R-08 | Matriz de estimación (velocidad y escenarios 17 / 19 / 21), cronograma, burndown y presupuesto (reserva de contingencia) |
+| R-03, R-04, R-05, R-12 | HU-01, HU-03, HU-05, HU-08 y HU-09; RNF-01 y RNF-03; DoD v1.1 |
+| R-06, R-13 | EEF de acceso a usuarios, de patrones y de privacidad; plan de comunicaciones |
+| R-07 | Mecanismo de cambios y plan de comunicaciones |
+| R-09, R-10, R-11 | DoD v1.1 (criterio 5 y ambiente de pruebas), tablero de trabajo y restricción de demostración local |## Definition of Done v1.1
+**Sección 09 · Semana 8**
 
 **Propósito:** para este producto, "terminado" significa que la historia hace lo que pide (sus criterios de aceptación) y está bien hecha: probada, revisada, integrada y documentada, de modo que forma parte de un Incremento que se puede demostrar sin pasos ocultos. La DoD aplica a todas las historias del Product Backlog. Una historia que no la cumple no se presenta en la Sprint Review y regresa al Product Backlog.
 
@@ -1242,11 +1380,8 @@ Cada integrante registra sus horas reales por semana y actividad. En cada Review
 | 07/12, cierre del proyecto | ₡1.416.000 | Futuro | Preparación + cuatro Sprints y cierre |
 
 Toda utilización de la reserva se documenta con fecha, causa, importe y saldo. Si cambian la disponibilidad, la tarifa de referencia, el número de Sprints o las herramientas, se recalcula el presupuesto, conservando la comparación con esta versión.
-
----
-
 ## Plan de comunicaciones y tablero de trabajo
-**Sección 10 · Semana 7**
+**Sección 10 · Semana 9**
 
 Define quién recibe qué información, cuándo y por qué canal, y cómo se hace visible el trabajo del equipo. Parte del registro de interesados y del mapa Poder-Interés.
 
