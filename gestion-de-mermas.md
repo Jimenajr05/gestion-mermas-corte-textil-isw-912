@@ -5,7 +5,7 @@
 **Proyecto:** Optimización del corte textil y reducción del desperdicio de tela
 
 **Estudiantes:** María Jimena Jara Rojas y María Fernanda Sibaja Campos  
-**Profesores:** Yesenia Calvo Araya  / Deiver Cubero 
+**Profesores:** Yesenia Calvo Araya  / Deiver Cubero  
 **Sede:** Sede Regional de San Carlos
 
 ## Historial de versiones
@@ -20,31 +20,137 @@
 | 6.0 | Clase 6 | 21/10/2026 | Matriz de estimación, cronograma de entregas y presupuesto. |
 | 7.0 | Clase 7 | 01/11/2026 | Plan de comunicaciones, tablero en Jira, replanificación a 4 Sprints y 11 historias, y DoD v1.1. |
 | 8.0 | Clase 8 | 08/11/2026 | Matriz de riesgos, plan de mitigación, plan de adquisiciones y acciones de mitigación en el Sprint Backlog. |
+| 9.0 | Clase 9 | 11/11/2026 | Acta de Sprint Review y Sprint Retrospective del Sprint 1, Release Plan replanificado y matriz RACI. |
 
 ## Contenido
 
 - [Historial de versiones](#historial-de-versiones)
+
+### Semana 1
+
 - [Definición del proyecto](#definición-del-proyecto)
+  - [Tema/Nombre](#temanombre)
+  - [Estudiantes](#estudiantes)
+  - [Problema](#problema)
+  - [Proyecto propuesto](#proyecto-propuesto)
+  - [Valor esperado](#valor-esperado)
+  - [Objetivos](#objetivos)
 - [Acta de constitución y Product Goal](#acta-de-constitución-y-product-goal)
+  - [Product Goal](#product-goal)
+  - [Criterios de éxito del proyecto](#criterios-de-éxito-del-proyecto)
 - [Definición del Scrum Team](#definición-del-scrum-team)
+
+### Semana 2
+
 - [Contexto organizacional y restricciones](#contexto-organizacional-y-restricciones)
-- [Análisis de entorno](#análisis-de-entorno-eefs)
+  - [Organización y flujo de trabajo](#organización-y-flujo-de-trabajo)
+  - [Activos disponibles y decisiones](#activos-disponibles-y-decisiones)
+- [Análisis de entorno (EEFs)](#análisis-de-entorno-eefs)
+  - [Factores ambientales que impactan el proyecto](#factores-ambientales-que-impactan-el-proyecto)
 - [Taller de interesados del proyecto](#taller-de-interesados-del-proyecto)
+  - [Identificación y registro de interesados](#identificación-y-registro-de-interesados)
+  - [Justificación de los casos discutibles](#justificación-de-los-casos-discutibles)
+  - [Mapa Poder-Interés](#mapa-poder-interés)
+  - [Preguntas de análisis del grupo](#preguntas-de-análisis-del-grupo)
+  - [Los tres interesados críticos](#los-tres-interesados-críticos)
+  - [¿Predictivo, adaptativo o híbrido?](#predictivo-adaptativo-o-híbrido)
+
+### Semana 3
+
 - [Ciclo de vida y primer Sprint](#ciclo-de-vida-y-primer-sprint)
-- [Alcance y Product Backlog priorizado](#alcance-y-product-backlog-priorizado)
+  - [Plan del primer Sprint](#plan-del-primer-sprint)
+
+### Semana 4
+
+- [Product Backlog priorizado](#product-backlog-priorizado)
+  - [Product Backlog ordenado](#product-backlog-ordenado)
+  - [Requisitos no funcionales y trazabilidad](#requisitos-no-funcionales-y-trazabilidad)
 - [Sprint Backlog y mecanismo de seguimiento](#sprint-backlog-y-mecanismo-de-seguimiento)
+  - [Verificación de la DoD por historia](#verificación-de-la-dod-por-historia)
+  - [Tablero y eventos propuestos](#tablero-y-eventos-propuestos)
+  - [Registro de seguimiento](#registro-de-seguimiento)
+
+### Semana 5
+
+- [Alcance del proyecto](#alcance-del-proyecto)
+  - [Alcance del proyecto (16/09/2026 – 07/12/2026)](#alcance-del-proyecto-16092026--07122026)
+  - [Fuera del alcance](#fuera-del-alcance)
+  - [Alcance del proyecto y aceptación](#alcance-del-proyecto-y-aceptación)
 - [Historias de usuario](#historias-de-usuario)
+  - [Historia de Usuario HU-01](#historia-de-usuario-hu-01)
+  - [Historia de Usuario HU-02](#historia-de-usuario-hu-02)
+  - [Historia de Usuario HU-03](#historia-de-usuario-hu-03)
+  - [Historia de Usuario HU-04](#historia-de-usuario-hu-04)
+  - [Historia de Usuario HU-05](#historia-de-usuario-hu-05)
+  - [Historia de Usuario HU-06](#historia-de-usuario-hu-06)
+  - [Historia de Usuario HU-07](#historia-de-usuario-hu-07)
+  - [Historia de Usuario HU-08](#historia-de-usuario-hu-08)
+  - [Historia de Usuario HU-09](#historia-de-usuario-hu-09)
+  - [Historia de Usuario HU-10](#historia-de-usuario-hu-10)
+  - [Historia de Usuario HU-11](#historia-de-usuario-hu-11)
 - [Definition of Done v1.1](#definition-of-done-v11)
+  - [Criterios de calidad](#criterios-de-calidad)
+  - [Pruebas exigidas](#pruebas-exigidas)
+  - [Integración y ambiente de pruebas](#integración-y-ambiente-de-pruebas)
+  - [Documentación mínima](#documentación-mínima)
+  - [Acuerdo y versión](#acuerdo-y-versión)
+
+### Semana 6
+
 - [Estimación de subtareas del Sprint 1](#estimación-de-subtareas-del-sprint-1)
+  - [HU-01: Colocación automática de piezas sobre el rollo de tela sin traslapes](#hu-01-colocación-automática-de-piezas-sobre-el-rollo-de-tela-sin-traslapes)
+  - [HU-02: Indicadores de aprovechamiento y desperdicio y línea base](#hu-02-indicadores-de-aprovechamiento-y-desperdicio-y-línea-base)
+  - [HU-03 y HU-04](#hu-03-y-hu-04)
+  - [Resumen de estimación y responsables](#resumen-de-estimación-y-responsables)
 - [Matriz de estimación](#matriz-de-estimación)
+  - [Escala e historias de referencia](#escala-e-historias-de-referencia)
+  - [Capacidad del equipo y velocidad estimada](#capacidad-del-equipo-y-velocidad-estimada)
+  - [Totales por épica y Sprint](#totales-por-épica-y-sprint)
+  - [Supuestos y riesgos de la estimación](#supuestos-y-riesgos-de-la-estimación)
+  - [Velocidad inicial y actualización](#velocidad-inicial-y-actualización)
 - [Cronograma de entregas y costos](#cronograma-de-entregas-y-costos)
-- [Riesgos y adquisiciones](#riesgos-y-adquisiciones)
+  - [Proyección de duración](#proyección-de-duración)
+  - [Release Plan del proyecto](#release-plan-del-proyecto)
+  - [Secuencia y control del cronograma](#secuencia-y-control-del-cronograma)
+  - [Estimación y presupuesto académico](#estimación-y-presupuesto-académico)
+  - [Seguimiento de costos](#seguimiento-de-costos)
+
+### Semana 7
+
 - [Plan de comunicaciones y tablero de trabajo](#plan-de-comunicaciones-y-tablero-de-trabajo)
+  - [Plan de comunicaciones](#plan-de-comunicaciones)
+  - [Matriz de responsabilidades (RACI)](#matriz-de-responsabilidades-raci)
+  - [Reglas del equipo](#reglas-del-equipo)
+  - [Escalamiento de impedimentos y conflictos](#escalamiento-de-impedimentos-y-conflictos)
+  - [Tablero de trabajo](#tablero-de-trabajo)
+
+### Semana 8
+
+- [Riesgos y adquisiciones](#riesgos-y-adquisiciones)
+  - [Escala de calificación](#escala-de-calificación)
+  - [Matriz de Riesgos](#matriz-de-riesgos)
+  - [Mapa de calor](#mapa-de-calor)
+  - [Plan de Mitigación](#plan-de-mitigación)
+  - [Acciones de mitigación en el Sprint Backlog](#acciones-de-mitigación-en-el-sprint-backlog)
+  - [Plan de adquisiciones](#plan-de-adquisiciones)
+  - [Seguimiento de riesgos](#seguimiento-de-riesgos)
+  - [Relación con otras secciones](#relación-con-otras-secciones)
+
+### Semana 9
+
+- [Acta de Sprint Review y Sprint Retrospective](#acta-de-sprint-review-y-sprint-retrospective)
+  - [Acta de Sprint Review](#acta-de-sprint-review)
+  - [Acta de Sprint Retrospective](#acta-de-sprint-retrospective)
+- [Matriz de responsabilidades (RACI)](#matriz-de-responsabilidades-raci) (en la sección de la Semana 7, junto al plan de comunicaciones)
+- [Release Plan replanificado](#release-plan-replanificado-11112026) (en el Cronograma de entregas de la Semana 6)
+
+---
+
+**Semana 1**
 
 ---
 
 ## Definición del proyecto
-**Sección 00 · Semana 1**
 
 ### Tema/Nombre
 
@@ -64,7 +170,7 @@ El problema puede presentarse tanto en empresas de confección de gran volumen c
 
 ### Proyecto propuesto
 
-> **Visión del producto.** Esta sección describe el producto completo al que se aspira. Lo que se construye en los cuatro Sprints del proyecto se define en [Alcance y Product Backlog priorizado](#alcance-y-product-backlog-priorizado); funciones como la importación DXF/SVG, la fotografía de moldes, el No-Fit Polygon o la evaluación con ESICUP quedan en Fuera del alcance.
+> **Visión del producto.** Esta sección describe el producto completo al que se aspira. Lo que se construye en los Sprints del proyecto se define en [Alcance del proyecto](#alcance-del-proyecto) y en el [Product Backlog priorizado](#product-backlog-priorizado); funciones como la importación DXF/SVG, la fotografía de moldes, el No-Fit Polygon o la evaluación con ESICUP quedan en Fuera del alcance.
 
 #### Descripción general
 
@@ -171,7 +277,6 @@ Desarrollar una plataforma web para la planificación y optimización del corte 
 ---
 
 ## Acta de constitución y Product Goal
-**Sección 00 · Semana 1**
 
 El acta define el propósito, los entregables y las condiciones iniciales del proyecto. Su aprobación está pendiente.
 
@@ -183,7 +288,7 @@ El acta define el propósito, los entregables y las condiciones iniciales del pr
 | Equipo responsable | María Jimena Jara Rojas y María Fernanda Sibaja Campos; distribución de responsabilidades en la definición del Scrum Team. |
 | Cliente y patrocinio | No hay empresa cliente ni patrocinador externo confirmado. La profesora evalúa el proyecto académico; esto no implica patrocinio financiero ni validación comercial. |
 | Entregables | Expediente actualizado, repositorio con código y evidencias, prototipo ejecutable, informe final y demostración del incremento. |
-| Inicio y cierre | Inicio: 16/09/2026. Cierre del proyecto: 07/12/2026. La construcción se organiza en cuatro Sprints del 14/10 al 07/12/2026. |
+| Inicio y cierre | Inicio: 16/09/2026. **Cierre del proyecto y entrega final: 24/11/2026** (Semana 11 del curso). El plan original cerraba el 07/12/2026 con cuatro Sprints; desde el 15/11 la construcción termina con el Sprint 2 (ver Release Plan replanificado). |
 | Recursos | Dos estudiantes, equipos existentes y herramientas de software disponibles; capacidad e importes propuestos en el plan temporal y de costos. |
 | Riesgos iniciales | Complejidad geométrica, sobreestimación de capacidad, falta de patrones reales e integración tardía. Se mitigan con un alcance acotado, datos sintéticos y entregas por Sprint. El registro detallado se desarrollará en la semana correspondiente. |
 | Autoridad y cambios | La Product Owner propone el orden y el alcance; las Developers estiman y organizan la implementación. Los cambios que afecten la evaluación se consultan a la profesora. Toda variación se documenta con su impacto en alcance, fecha y costo. |
@@ -191,7 +296,9 @@ El acta define el propósito, los entregables y las condiciones iniciales del pr
 
 ### Product Goal
 
-Permitir que una persona encargada del corte textil configure un caso sencillo, obtenga una distribución de piezas sin traslapes y compare el aprovechamiento de una colocación base con una alternativa optimizada, mediante una plataforma web demostrable al cierre del proyecto, el 07/12/2026.
+Permitir que una persona encargada del corte textil configure un caso sencillo, obtenga una distribución de piezas sin traslapes y compare el aprovechamiento de una colocación base con una alternativa optimizada, mediante una plataforma web demostrable al cierre del proyecto, el 24/11/2026.
+
+**Estado del Product Goal (15/11/2026):** con la entrega final el 24/11, el Sprint 2 solo alcanza HU-01 a HU-04: distribución sin traslapes, indicadores, línea base y plataforma navegable. La comparación con la alternativa optimizada (HU-05 y HU-09) queda pendiente, por lo que el Product Goal se cumple en parte y así se declara en el informe final, sin reducir la DoD.
 
 ### Criterios de éxito del proyecto
 
@@ -204,9 +311,8 @@ Permitir que una persona encargada del corte textil configure un caso sencillo, 
 ---
 
 ## Definición del Scrum Team
-**Sección 01 · Semana 1**
 
-| Rol | Integrante asignada (propuesta) | Responsabilidades hasta el cierre del proyecto (07/12/2026) |
+| Rol | Integrante asignada (propuesta) | Responsabilidades hasta el cierre del proyecto (24/11/2026) |
 |---|---|---|
 | Product Owner | María Jimena Jara Rojas | Definir y comunicar la meta del producto, ordenar el Product Backlog y priorizar las funciones según las necesidades de los usuarios y el tiempo disponible |
 | Scrum Master | María Fernanda Sibaja Campos | Promover la aplicación de Scrum, facilitar los eventos cuando sea necesario, ayudar a resolver impedimentos y apoyar la mejora de la efectividad del equipo |
@@ -214,8 +320,11 @@ Permitir que una persona encargada del corte textil configure un caso sencillo, 
 
 ---
 
+**Semana 2**
+
+---
+
 ## Contexto organizacional y restricciones
-**Secciones 02–03 · Semana 2**
 
 El escenario de referencia es un taller pequeño de confección que planifica sus cortes con patrones y rollos de tela. El prototipo se validará inicialmente con casos sintéticos; la validación con un taller real queda pendiente.
 
@@ -229,7 +338,7 @@ El equipo académico se organiza alrededor del proyecto, con dos integrantes que
 
 | Restricción | Aplicación al proyecto |
 |---|---|
-| Fecha | Proyecto del 16/09/2026 al 07/12/2026; construcción en cuatro Sprints del 14/10 al 07/12. |
+| Fecha | Proyecto del 16/09/2026 al 24/11/2026 (entrega final en la Semana 11). La construcción se planificó en cuatro Sprints hasta el 07/12 y se replanificó: termina con el Sprint 2, del 11/11 al 24/11. |
 | Personal y capacidad | Solo dos Developers junior, con 20 horas semanales cada una (velocidad estimada de 19 puntos por Sprint). |
 | Infraestructura | Demostración local en un equipo existente. No depender de un alojamiento de pago o de conexión durante la demo. |
 | Datos | Emplear casos sintéticos mientras no existan patrones reales autorizados; no afirmar validación industrial. |
@@ -246,13 +355,12 @@ La Product Owner registra propuestas de cambio con fecha, motivo, ítems afectad
 ---
 
 ## Análisis de entorno (EEFs)
-**Sección 02 · Semana 2**
 
 ### Factores ambientales que impactan el proyecto
 
 | Factor ambiental | Condición conocida o por verificar | Impacto en la solución | Respuesta prevista |
 |---|---|---|---|
-| Calendario y requisitos académicos | El proyecto va del 16/09 al 07/12/2026 y su Expediente se revisa semana a semana en el curso | Limitan el tiempo y condicionan los entregables | Priorizar las funciones y ajustar la planificación al calendario oficial |
+| Calendario y requisitos académicos | El proyecto va del 16/09 al 24/11/2026 y su Expediente se revisa semana a semana en el curso | Limitan el tiempo y condicionan los entregables | Priorizar las funciones y ajustar la planificación al calendario oficial |
 | Infraestructura tecnológica disponible | Verificar capacidad de las computadoras, conexión y alojamiento disponible | Puede limitar la ejecución del algoritmo genético y las demostraciones | Realizar pruebas de rendimiento en los equipos disponibles y evaluar ejecución local |
 | Acceso a usuarios del sector textil | Confirmar disponibilidad de dueños, patronistas y operarios para entrevistas y pruebas | Condiciona la validación de necesidades y resultados | Coordinar su participación y documentar las limitaciones si no se consigue acceso |
 | Disponibilidad y uso de patrones | Confirmar formatos, medidas y permisos para utilizar patrones reales | Determina los casos de prueba y las posibilidades de publicar ejemplos | Utilizar material autorizado o casos sintéticos identificados como tales |
@@ -264,7 +372,6 @@ La Product Owner registra propuestas de cambio con fecha, motivo, ítems afectad
 ---
 
 ## Taller de interesados del proyecto
-**Sección 03 · Semana 2**
 
 ### Identificación y registro de interesados
 
@@ -358,8 +465,11 @@ Por estas características, el enfoque híbrido se adapta al contexto del proyec
 
 ---
 
+**Semana 3**
+
+---
+
 ## Ciclo de vida y primer Sprint
-**Sección 04 · Semana 3**
 
 Se mantiene el enfoque híbrido justificado en el análisis de interesados: hitos académicos fijos y construcción iterativa del producto.
 
@@ -367,9 +477,9 @@ Se mantiene el enfoque híbrido justificado en el análisis de interesados: hito
 |---|---|---|
 | Inicio | Semanas 1–2, 16/09–30/09 | Problema, equipo, meta, contexto e interesados documentados; supuestos identificados. |
 | Preparación | Semanas 3–4, 30/09–14/10 | Ciclo de vida, backlog inicial y plan del primer Sprint. |
-| Construcción incremental | Sprints 1–4, 14/10–07/12 | Motor genético, captura de piezas, ejecución web, visualización y órdenes; inspección y adaptación en cada Sprint. |
-| Verificación y consolidación | Continua; énfasis en el Sprint 4, 25/11–07/12 | Casos reproducibles, integración, expediente, evidencias y preparación de demo. |
-| Cierre | 07/12/2026 | Demo, informe final, alcance logrado y pendiente, lecciones aprendidas y entrega del repositorio. |
+| Construcción incremental | Sprints 1 y 2, 14/10–24/11 (plan original: cuatro Sprints hasta el 07/12) | Motor genético, captura de piezas, ejecución web, visualización y órdenes; inspección y adaptación en cada Sprint. |
+| Verificación y consolidación | Continua; énfasis en la última semana del Sprint 2, 18/11–24/11 | Casos reproducibles, integración, expediente, evidencias y preparación de demo. |
+| Cierre | 24/11/2026 | Demo, informe final, alcance logrado y pendiente, lecciones aprendidas y entrega del repositorio. |
 
 Las fechas límite de periodos consecutivos representan el cambio de fase; no agregan días de trabajo. La verificación acompaña al desarrollo y no se aplaza íntegramente al cierre.
 
@@ -380,45 +490,19 @@ Las fechas límite de periodos consecutivos representan el cambio de fase; no ag
 - **Selección:** HU-01 a HU-04, 19 puntos de una capacidad estimada de 19. Se eligen porque sin colocación válida, indicadores y línea base no se puede verificar la mejora del optimizador; la plataforma web (HU-04) se trabaja en paralelo para no retrasar la captura de piezas.
 - **Incremento previsto:** motor ejecutable localmente con imagen del trazo, indicadores, línea base y rotaciones, y la estructura web navegable.
 - **Entrada al Sprint:** disponer de ejemplos de polígonos, unidades comunes, ancho de rollo y criterios de aceptación. Revisar el plan si falta alguno.
-- **Situación al corte documental:** las historias y tareas están descritas; no se aportan código ni resultados que acrediten su terminación.
+- **Situación al corte documental:** las historias y tareas están descritas; no se aportan código ni resultados que acrediten su terminación. Al 11/11/2026 el Sprint 1 se cerró con 0 de 19 puntos (ver [Acta de Sprint Review y Sprint Retrospective](#acta-de-sprint-review-y-sprint-retrospective)).
 
 Cada Sprint comienza con Planning para revisar meta y capacidad. Durante su ejecución se inspecciona el tablero mediante Daily Scrum. La Review examina el incremento contra criterios y DoD; la Retrospective define una mejora para el siguiente Sprint. En el cierre de un Sprint y apertura del siguiente se registra la transición sin duplicar capacidad.
 
 ---
 
-## Alcance y Product Backlog priorizado
-**Secciones 05–06 · Semanas 4–5**
+**Semana 4**
+
+---
+
+## Product Backlog priorizado
 
 El Product Backlog contiene las historias que caben en los cuatro Sprints del proyecto. Lo que la visión del producto describe y no cabe se declara en Fuera del alcance.
-
-### Alcance del proyecto (16/09/2026 – 07/12/2026)
-
-El proyecto va del **16/09/2026 al 07/12/2026**. La construcción se organiza en **cuatro Sprints entre el 14/10 y el 07/12**, con **11 historias de usuario y 66 puntos**, que es lo que permite la capacidad del equipo (ver la matriz de estimación). Las historias cubren los tres objetivos específicos:
-
-- **Objetivo 1:** plataforma web adaptable; registro de rollos, prendas con tallas, piezas por plantillas rectas y curvas o por coordenadas, cantidades y órdenes de producción.
-- **Objetivo 2:** colocación sin traslapes, rotaciones permitidas, algoritmo genético, indicadores de largo, aprovechamiento y desperdicio, y visualización de la distribución.
-- **Objetivo 3:** comparación de la línea base, el algoritmo genético y un acomodo manual con los mismos datos.
-
-La plataforma funciona para un taller de referencia, en ejecución local, con una base de datos local y sin cuentas de usuario.
-
-### Fuera del alcance
-
-Las siguientes capacidades forman parte de la visión del producto descrita al inicio, pero no caben en los cuatro Sprints y no tienen historias en este backlog:
-
-- Cuentas de usuario, tipos de cliente, roles y separación por empresa.
-- Importación de archivos DXF y SVG, fotografía de moldes con visión por computadora y editor de dibujo.
-- Gradación de tallas, biblioteca de prendas y control de versiones.
-- Piezas con huecos internos, margen de costura, piezas en espejo y coincidencia de estampados.
-- Inventario de rollos, costo del desperdicio, plano de corte imprimible, historial y reportes.
-- Colocación con No-Fit Polygon y evaluación con instancias ESICUP.
-
-Tampoco se incluyen la predicción con aprendizaje automático, la gestión de producción, los proveedores, la operación en planta ni una garantía de ahorro real. Si se aprueba una fase posterior, estas capacidades se convertirán en historias y se estimarán con la velocidad observada.
-
-### Alcance del proyecto y aceptación
-
-El trabajo comprende análisis, refinamiento, diseño de entradas y resultados, implementación, pruebas, integración, documentación, preparación de casos y demo, informe final y cierre. La estimación de cada historia incluye su diseño, pruebas y documentación, sin contarlos de nuevo como funcionalidades adicionales.
-
-Cada historia se acepta contra sus criterios y la DoD. El equipo registra el resultado y la evidencia; las observaciones de la profesora y de los interesados se incorporan como cambios. La aceptación académica final corresponde a la profesora. Si no participa un taller real, se declara esa limitación en el informe.
 
 ### Product Backlog ordenado
 
@@ -428,17 +512,21 @@ El orden de las filas expresa la prioridad. Cada historia tiene el identificador
 
 | Orden | ID | Historia resumida | Épica | Puntos | Prioridad | Sprint | Depende de |
 |---:|---|---|---|---:|---|---|---|
-| 1 | HU-01 | Colocación automática de piezas sin traslapes e imagen del trazo | E1 | 8 | Alta | Sprint 1 | — |
-| 2 | HU-02 | Indicadores de aprovechamiento y desperdicio y línea base | E1 | 5 | Alta | Sprint 1 | HU-01 (datos de ejemplo) |
-| 3 | HU-03 | Rotaciones permitidas y dirección del hilo | E1 | 3 | Alta | Sprint 1 | HU-01 |
-| 4 | HU-04 | Plataforma web adaptable | E3 | 3 | Alta | Sprint 1 | — |
-| 5 | HU-05 | Optimización con algoritmo genético | E1 | 8 | Alta | Sprint 2 | HU-01, HU-02, HU-03 |
-| 6 | HU-06 | Registro y validación de piezas (plantillas rectas y coordenadas) | E2 | 8 | Alta | Sprint 2 | HU-04 |
-| 7 | HU-07 | Rollos, prendas, tallas y cantidades | E2 | 8 | Alta | Sprint 3 | HU-04, HU-06 |
-| 8 | HU-08 | Ejecución de la optimización desde la web | E3 | 5 | Alta | Sprint 3 | HU-05, HU-07 |
-| 9 | HU-09 | Comparación de alternativas: línea base, genético y acomodo manual | E1 | 5 | Alta | Sprint 3 | HU-02, HU-05 |
-| 10 | HU-10 | Piezas con plantillas curvas | E2 | 5 | Media | Sprint 4 | HU-06 |
-| 11 | HU-11 | Resultados visuales y órdenes de producción | E3 | 8 | Alta | Sprint 4 | HU-08, HU-09 |
+| 1 | HU-01 | Colocación automática de piezas sin traslapes e imagen del trazo | E1 | 8 | Alta | Sprint 1 → Sprint 2 | — |
+| 2 | HU-02 | Indicadores de aprovechamiento y desperdicio y línea base | E1 | 5 | Alta | Sprint 1 → Sprint 2 | HU-01 (datos de ejemplo) |
+| 3 | HU-03 | Rotaciones permitidas y dirección del hilo | E1 | 3 | Alta | Sprint 1 → Sprint 2 | HU-01 |
+| 4 | HU-04 | Plataforma web adaptable | E3 | 3 | Alta | Sprint 1 → Sprint 2 | — |
+| 5 | HU-05 | Optimización con algoritmo genético | E1 | 8 | Alta | Pendiente (15/11) | HU-01, HU-02, HU-03 |
+| 6 | HU-06 | Registro y validación de piezas (plantillas rectas y coordenadas) | E2 | 8 | Alta | Pendiente (15/11) | HU-04 |
+| 7 | HU-07 | Rollos, prendas, tallas y cantidades | E2 | 8 | Alta | Pendiente (15/11) | HU-04, HU-06 |
+| 8 | HU-08 | Ejecución de la optimización desde la web | E3 | 5 | Alta | Pendiente (15/11) | HU-05, HU-07 |
+| 9 | HU-09 | Comparación de alternativas: línea base, genético y acomodo manual | E1 | 5 | Alta | Pendiente (15/11) | HU-02, HU-05 |
+| 10 | HU-10 | Piezas con plantillas curvas | E2 | 5 | Media | Pendiente (retirada el 11/11) | HU-06 |
+| 11 | HU-11 | Resultados visuales y órdenes de producción | E3 | 8 | Alta | Pendiente (15/11) | HU-08, HU-09 |
+
+**Actualización del 11/11/2026 (versión 9.0):** según el Acta de Sprint Review del Sprint 1, HU-10 se retira a pendiente y quedan **10 historias y 61 puntos** comprometidos. La asignación de Sprints de la tabla corresponde al plan original; el nuevo calendario y el alcance que se declare pendiente se acuerdan con la profesora (acción AM-03).
+
+**Responsable de cada historia en Jira:** Fernanda responde por HU-01, HU-04, HU-06, HU-08 y HU-11 (colocación, plataforma web, registro de piezas e integración motor-web, en línea con T-02, T-16 y el riesgo R-05). Jimena responde por HU-02, HU-03, HU-05, HU-07, HU-09 y HU-10 (indicadores, rotaciones, algoritmo genético, rollos y comparación, en línea con T-09 a T-13 y el riesgo R-04). Las épicas E1 a E3 quedan a cargo de la Product Owner. La responsable de una historia vela por que se complete; las subtareas se reparten entre ambas Developers.
 
 ### Requisitos no funcionales y trazabilidad
 
@@ -455,7 +543,6 @@ El orden de las filas expresa la prioridad. Cada historia tiene el identificador
 ---
 
 ## Sprint Backlog y mecanismo de seguimiento
-**Sección 05 · Semana 4**
 
 - **Sprint Goal:** obtener un trazo válido y reproducible de piezas sobre un rollo de ancho definido, que respete las rotaciones permitidas, con sus indicadores y una línea base de comparación.
 - **Fechas:** del 14/10/2026 al 28/10/2026.
@@ -505,11 +592,50 @@ La revisión de código corresponde a la otra integrante. En la Review se demues
 |---|---|---|---|---|---|
 | 22/10/2026 | HU-01 y HU-02 / T-01 a T-10 | Planificado | Ninguno registrado | Ambas: mantener actualizado el tablero | Sprint Backlog |
 | 01/11/2026 | Product Backlog | Replanificado | El backlog anterior solo detallaba dos historias y suponía 10 h semanales | Product Owner: backlog de 11 historias que caben en los cuatro Sprints; Developers: estimación con 20 h semanales cada una | Versión 7.0 del expediente |
+| 11/11/2026 | Sprint 1 / HU-01 a HU-04 | No terminadas (0 de 19 puntos) | Sin código ni pruebas en `main`; seguimiento diario sin registro | Product Owner: retirar HU-10 a pendiente y consultar a la profesora los 29 puntos que exceden la capacidad restante (32 de 61); Scrum Master: registrar el Daily Scrum (AM-02) | Acta de Sprint Review y Retrospective, versión 9.0 |
+| 11/11/2026 | Sprint 2 (11/11–24/11) / HU-01 a HU-04 | Planificado e iniciado | Ninguno al inicio | Ambas: AM-01 primero (T-01 y T-02 en `main` al 18/11); Product Owner: AM-03 antes del 16/11 | Sprint 2 activo en Jira con 19 puntos, AM-01 a AM-03, M-01, M-02, M-05 y M-06 |
+| 15/11/2026 | Release / fecha de entrega | Replanificado | La entrega final del curso es el 24/11/2026 (Semana 11), antes del 07/12 previsto | Product Owner: el Sprint 2 termina el 24/11 y es el último; HU-05 a HU-09 y HU-11 se declaran pendientes (HU-10 ya lo estaba); M-07 entra al Sprint 2. Se resuelve así la propuesta de AM-03 | Sprint 2 en Jira hasta el 24/11 y etiqueta `pendiente` en HU-05 a HU-11 |
+
+---
+
+**Semana 5**
+
+---
+
+## Alcance del proyecto
+
+### Alcance del proyecto (16/09/2026 – 07/12/2026)
+
+El proyecto se planificó del **16/09/2026 al 07/12/2026** (la entrega final vigente es el 24/11/2026). La construcción se organizó en **cuatro Sprints entre el 14/10 y el 07/12**, con **11 historias de usuario y 66 puntos**, que es lo que permite la capacidad del equipo (ver la matriz de estimación). Desde el 11/11/2026 quedan 10 historias y 61 puntos comprometidos, al retirarse HU-10. **Desde el 15/11/2026 la entrega final es el 24/11**, por lo que el compromiso se reduce a HU-01 a HU-04 (19 puntos) en el Sprint 2; HU-05 a HU-09 y HU-11 quedan pendientes (ver el Release Plan replanificado). Las historias cubren los tres objetivos específicos:
+
+- **Objetivo 1:** plataforma web adaptable; registro de rollos, prendas con tallas, piezas por plantillas rectas y curvas o por coordenadas, cantidades y órdenes de producción.
+- **Objetivo 2:** colocación sin traslapes, rotaciones permitidas, algoritmo genético, indicadores de largo, aprovechamiento y desperdicio, y visualización de la distribución.
+- **Objetivo 3:** comparación de la línea base, el algoritmo genético y un acomodo manual con los mismos datos.
+
+La plataforma funciona para un taller de referencia, en ejecución local, con una base de datos local y sin cuentas de usuario.
+
+### Fuera del alcance
+
+Las siguientes capacidades forman parte de la visión del producto descrita al inicio, pero no caben en los cuatro Sprints y no tienen historias en este backlog:
+
+- Cuentas de usuario, tipos de cliente, roles y separación por empresa.
+- Importación de archivos DXF y SVG, fotografía de moldes con visión por computadora y editor de dibujo.
+- Gradación de tallas, biblioteca de prendas y control de versiones.
+- Piezas con huecos internos, margen de costura, piezas en espejo y coincidencia de estampados.
+- Inventario de rollos, costo del desperdicio, plano de corte imprimible, historial y reportes.
+- Colocación con No-Fit Polygon y evaluación con instancias ESICUP.
+
+Tampoco se incluyen la predicción con aprendizaje automático, la gestión de producción, los proveedores, la operación en planta ni una garantía de ahorro real. Si se aprueba una fase posterior, estas capacidades se convertirán en historias y se estimarán con la velocidad observada.
+
+### Alcance del proyecto y aceptación
+
+El trabajo comprende análisis, refinamiento, diseño de entradas y resultados, implementación, pruebas, integración, documentación, preparación de casos y demo, informe final y cierre. La estimación de cada historia incluye su diseño, pruebas y documentación, sin contarlos de nuevo como funcionalidades adicionales.
+
+Cada historia se acepta contra sus criterios y la DoD. El equipo registra el resultado y la evidencia; las observaciones de la profesora y de los interesados se incorporan como cambios. La aceptación académica final corresponde a la profesora. Si no participa un taller real, se declara esa limitación en el informe.
 
 ---
 
 ## Historias de usuario
-**Sección 06 · Semana 5**
 
 Todas las historias siguen la plantilla de historias de usuario: título, plantilla clásica (Card), criterios de aceptación (Confirmation) en formato *Dado / cuando / entonces*, estimación y prioridad, notas adicionales y verificación INVEST. Cada una entrega valor visible a un rol, mide 8 puntos o menos para caber en un Sprint y tiene criterios comprobables.
 
@@ -934,7 +1060,7 @@ Piezas con plantillas curvas
 
 - **Prioridad:** Media.
 - **Estimación:** 5 puntos de historia (Fibonacci).
-- **Ítem del Product Backlog:** HU-10, Sprint 4 (25/11/2026 al 07/12/2026). Es la primera historia que se retira si la velocidad real es menor a la estimada.
+- **Ítem del Product Backlog:** HU-10, planificada para el Sprint 4 (25/11/2026 al 07/12/2026). Es la primera historia que se retira si la velocidad real es menor a la estimada. **Retirada a pendiente el 11/11/2026** (Acta de Sprint Review del Sprint 1).
 
 #### Notas adicionales o anexos
 
@@ -999,8 +1125,359 @@ Resultados visuales y órdenes de producción
 
 ---
 
+## Definition of Done v1.1
+
+**Propósito:** para este producto, "terminado" significa que la historia hace lo que pide (sus criterios de aceptación) y está bien hecha: probada, revisada, integrada y documentada, de modo que forma parte de un Incremento que se puede demostrar sin pasos ocultos. La DoD aplica a todas las historias del Product Backlog. Una historia que no la cumple no se presenta en la Sprint Review y regresa al Product Backlog.
+
+### Criterios de calidad
+
+1. Sus criterios de aceptación se verifican y se registra el resultado con datos de entrada y salida esperada.
+2. El código está integrado en la rama principal (`main`) del repositorio, sin romper la ejecución, y fue revisado por la otra integrante mediante un pull request; se conserva referencia al commit y a la revisión.
+3. Pasan las pruebas exigidas de la historia y las regresiones de geometría y métricas que pueda afectar. No quedan errores conocidos que invaliden el trazo, los indicadores o el flujo principal.
+4. Las entradas inválidas producen mensajes comprensibles; las unidades y restricciones se muestran o documentan. Los porcentajes se comparan con tolerancia de 0,01 puntos porcentuales por redondeo.
+5. Se puede ejecutar desde una copia limpia del repositorio en el equipo de pruebas, siguiendo las instrucciones y versiones de dependencias documentadas; los datos de prueba necesarios están disponibles.
+6. Se adjunta una evidencia adecuada: salida, imagen, prueba o captura, sin información confidencial. Para el optimizador se registran semilla y parámetros.
+7. El expediente, el backlog y las instrucciones se actualizan para reflejar el comportamiento real y sus limitaciones.
+8. En historias de interfaz se comprueba RNF-02; en historias de optimización se comprueban RNF-01 y RNF-03. Una excepción requiere cambiar explícitamente el alcance o criterio antes de la aceptación; no se omite silenciosamente.
+
+### Pruebas exigidas
+
+| Tipo | Cuándo se exige | Ejemplo en el proyecto |
+|---|---|---|
+| Unitarias (automáticas) | Toda función nueva del motor: colocación, indicadores, rotaciones, algoritmo genético y validación de piezas | Una pieza nunca queda fuera del ancho del rollo; aprovechamiento y desperdicio suman 100 % |
+| De integración | Cuando una historia conecta partes: motor con la web o captura con la optimización | Un caso capturado en la web produce la misma distribución que el motor con los mismos datos y semilla |
+| Manuales | Historias de interfaz y verificación de criterios en la Sprint Review | Revisión de pantallas en 360 y 1280 píxeles; lectura de la imagen del trazo |
+
+### Integración y ambiente de pruebas
+
+El trabajo se desarrolla en ramas por historia y se integra a `main` solo después de la revisión de la otra integrante y con las pruebas pasando. El ambiente de pruebas es una copia limpia del repositorio en la computadora de la integrante que no desarrolló la historia, ejecutada en local, sin depender de alojamiento externo.
+
+### Documentación mínima
+
+Instrucciones de instalación y ejecución en el repositorio, descripción de los datos de prueba, parámetros del optimizador utilizados y actualización del Expediente.
+
+### Acuerdo y versión
+
+| Versión | Fecha | Cambio | Acordada por |
+|---|---|---|---|
+| 1.0 | 14/10/2026 | Primera versión con ocho criterios de calidad | Developers y Product Owner |
+| 1.1 | 01/11/2026 | Se agregan propósito, pruebas exigidas, rama principal y ambiente de pruebas, según la guía de la Semana 5 | Developers y Product Owner |
+
+La Review inspecciona el incremento y orienta el backlog; no convierte en terminado lo que incumple la DoD. La velocidad se calcula con los puntos completos de historias terminadas, sin crédito parcial por subtareas.
+
+---
+
+**Semana 6**
+
+---
+
+## Estimación de subtareas del Sprint 1
+
+Escala Fibonacci utilizada: **1, 2, 3, 5, 8 y 13**. Los totales de subtareas son sumas de tareas, no estimaciones de historias completas, y no se usan como velocidad.
+
+### HU-01: Colocación automática de piezas sobre el rollo de tela sin traslapes
+
+| ID | Subtarea | Puntos | Responsable |
+|---|---|---:|---|
+| T-01 | Definir las piezas y dimensiones del rollo de tela. | 3 | Jimena |
+| T-02 | Implementar la colocación automática con Bottom-Left y Shapely. | 8 | Fernanda |
+| T-03 | Validar que las piezas no se traslapen ni salgan del rollo. | 5 | Jimena |
+| T-04 | Validar piezas que excedan el ancho del rollo. | 3 | Fernanda |
+| T-05 | Comprobar que la distribución sea reproducible. | 3 | Jimena |
+| T-06 | Generar una imagen de la distribución de piezas. | 5 | Fernanda |
+| T-07 | Realizar pruebas con diferentes formas geométricas. | 5 | Jimena |
+| **Total HU-01** | | **32** | |
+
+### HU-02: Indicadores de aprovechamiento y desperdicio y línea base
+
+| ID | Subtarea | Puntos | Responsable |
+|---|---|---:|---|
+| T-08 | Calcular el largo de tela consumido. | 3 | Fernanda |
+| T-09 | Calcular el porcentaje de aprovechamiento y desperdicio. | 3 | Jimena |
+| T-10 | Mostrar los indicadores y validar los resultados mediante pruebas. | 5 | Fernanda |
+| T-11 | Ordenar las piezas de mayor a menor área. | 2 | Jimena |
+| T-12 | Ejecutar la línea base y registrar sus indicadores en tres casos. | 3 | Jimena |
+| **Total HU-02** | | **16** | |
+
+### HU-03 y HU-04
+
+| ID | Historia | Subtarea | Puntos | Responsable |
+|---|---|---|---:|---|
+| T-13 | HU-03 | Modelar la dirección del hilo y las rotaciones permitidas por pieza. | 3 | Jimena |
+| T-14 | HU-03 | Evaluar solo las orientaciones permitidas durante la colocación. | 5 | Fernanda |
+| T-15 | HU-03 | Probar la conservación de la orientación y el rechazo de violaciones. | 3 | Jimena |
+| T-16 | HU-04 | Crear el proyecto web con la navegación principal. | 3 | Fernanda |
+| T-17 | HU-04 | Aplicar el diseño adaptable y verificarlo en 360 y 1280 píxeles. | 3 | Jimena |
+| T-18 | HU-04 | Documentar las instrucciones de ejecución local. | 2 | Jimena |
+| **Total HU-03 y HU-04** | | | **19** | |
+
+### Resumen de estimación y responsables
+
+| Responsable | HU-01 | HU-02 | HU-03 | HU-04 | Total |
+|---|---:|---:|---:|---:|---:|
+| Jimena | 16 | 8 | 6 | 5 | 35 |
+| Fernanda | 16 | 8 | 5 | 3 | 32 |
+| **Total** | **32** | **16** | **11** | **8** | **67** |
+
+**Estimación total de las subtareas del Sprint 1:** 67 puntos de subtareas para 19 puntos de historias. Las subtareas de cada Sprint siguiente se definen en su Sprint Planning.
+
+---
+
+## Matriz de estimación
+
+### Escala e historias de referencia
+
+Se utiliza Fibonacci **1, 2, 3, 5, 8, 13**. Los puntos expresan tamaño relativo, complejidad e incertidumbre. Cada historia se estima comparándola con estas referencias:
+
+| Puntos | Historia de referencia | Por qué |
+|---:|---|---|
+| 3 | **HU-03 · Rotaciones permitidas (referencia principal)** | Regla acotada sobre la colocación existente, con casos de prueba claros. |
+| 5 | HU-02 · Indicadores y línea base | Fórmulas conocidas y un orden simple, con varios casos de resultado esperado. |
+| 8 | HU-01 · Colocación sin traslapes e imagen | Geometría de polígonos, casos límite, reproducibilidad e imagen; la mayor incertidumbre técnica del inicio. |
+| 13 | — | Tamaño de épica: debe dividirse antes de entrar a un Sprint. Ninguna historia del backlog lo alcanza. |
+
+Antes de cada Sprint Planning, ambas integrantes estiman de forma independiente con Planning Poker, revelan sus valores a la vez, discuten las diferencias y repiten la votación. Se anotan la fecha, la cifra inicial, la cifra acordada y el motivo del cambio.
+
+### Capacidad del equipo y velocidad estimada
+
+Supuestos: dos desarrolladoras junior con **20 horas semanales cada una**, Sprints de dos semanas (10 días hábiles) y un factor de enfoque de 0,8 por la curva de aprendizaje de Shapely, DEAP y el desarrollo web, la revisión entre pares y los imprevistos.
+
+| Concepto | Cálculo | Horas por Sprint |
+|---|---|---:|
+| Disponibilidad del equipo | 2 integrantes × 20 h × 2 semanas | 80 |
+| Eventos de Scrum | (Planning 2 h + Review 1 h + Retrospective 1 h + Refinamiento 1 h + Daily 15 min × 10 días = 2,5 h) × 2 integrantes | −15 |
+| Horas para desarrollo | 80 − 15 | 65 |
+| Horas productivas | 65 × 0,8 | 52 |
+| Equivalencia de referencia | HU-03 (3 puntos) ≈ 8 h de una persona junior, con pruebas y documentación → 2,7 h por punto | — |
+| **Velocidad estimada** | **52 ÷ 2,7 ≈ 19 puntos por Sprint** | — |
+
+La equivalencia de 2,7 horas por punto se usa solo para dimensionar la capacidad; las historias se siguen estimando por comparación. Con factores de enfoque de 0,7 y 0,9 resultan **17 y 21 puntos**, que definen los escenarios conservador y favorable.
+
+**Sprint 4 (25/11–07/12):** tiene 9 días hábiles (72 h). Descontando los eventos (15 h) y las actividades de cierre (12 h: informe final, expediente, preparación de la demo y lecciones aprendidas), quedan 45 h × 0,8 = 36 h productivas, es decir, **13 puntos**.
+
+### Totales por épica y Sprint
+
+| Épica | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Total |
+|---|---:|---:|---:|---:|---:|
+| E1 Motor de optimización (IA) | 16 | 8 | 5 | 0 | 29 |
+| E2 Registro de telas y piezas | 0 | 8 | 8 | 5 | 21 |
+| E3 Plataforma web y resultados | 3 | 0 | 5 | 8 | 16 |
+| **Total** | **19** | **16** | **18** | **13** | **66** |
+
+### Supuestos y riesgos de la estimación
+
+**Supuestos:**
+
+- Ambas integrantes sostienen 20 horas semanales durante los cuatro Sprints.
+- Los casos de prueba tienen hasta 20 piezas y las librerías elegidas (Shapely, DEAP y el framework web) funcionan en los equipos disponibles.
+- El factor de enfoque de 0,8 cubre el aprendizaje, la revisión entre pares y los imprevistos menores.
+- Las historias de referencia (HU-03 de 3 puntos, HU-02 de 5 y HU-01 de 8) se mantienen como base de comparación durante todo el proyecto.
+
+**Riesgos de la estimación:**
+
+| Riesgo | Efecto | Respuesta |
+|---|---|---|
+| No hay velocidad histórica: la de 19 puntos es una hipótesis | El plan puede ser optimista | Medir la velocidad real al cerrar el Sprint 1 y recalcular el plan con ella |
+| La geometría (HU-01) y el algoritmo genético (HU-05) son nuevos para el equipo | Pueden tardar más de lo estimado | Limitar el tiempo de investigación dentro del Sprint y dividir la historia si supera 8 puntos al refinarla |
+| Menor disponibilidad por exámenes u otros cursos | Baja la capacidad de un Sprint | Aplicar el escenario conservador y retirar primero HU-10 |
+| Integración tardía entre el motor y la web (HU-08 y HU-11) | Problemas descubiertos al final | Hito de integración el 25/11, al cerrar el Sprint 3 |
+
+### Velocidad inicial y actualización
+
+Al finalizar cada Sprint se registran los puntos previstos y los terminados con DoD. La velocidad observada reemplaza a la estimada a partir del Sprint 2 y se recalcula el plan con los puntos restantes. Las diferencias no se interpretan como productividad individual.
+
+| Sprint | Puntos previstos | Puntos terminados con DoD | Velocidad observada |
+|---|---:|---|---|
+| 1 | 19 | 0 (ninguna historia cumple la DoD; ver Acta de Sprint Review) | 0 |
+| 2 original (28/10–11/11) | 16 | No se ejecutó: el periodo transcurrió sin Sprint Planning | — |
+| 2 replanificado (11/11–24/11) | 19 | En curso; último Sprint del proyecto | — |
+
+Como el Sprint 1 no tuvo trabajo de desarrollo, su velocidad de 0 no reemplaza a la estimada; se sigue usando 19 hasta cerrar el primer Sprint con trabajo real.
+
+---
+
+## Cronograma de entregas y costos
+
+El proyecto va del 16/09/2026 al 07/12/2026: inicio y preparación del 16/09 al 14/10, y construcción en cuatro Sprints del 14/10 al 07/12.
+
+> **Plan vigente (15/11/2026):** esta sección conserva el plan original de la Semana 6. La entrega final es el **24/11/2026** y el último Sprint es el Sprint 2 (11/11–24/11); ver [Release Plan replanificado](#release-plan-replanificado-11112026).
+
+### Proyección de duración
+
+Sprints necesarios = redondeo hacia arriba de **puntos ÷ velocidad**, ajustado porque las historias no se dividen entre Sprints.
+
+| Alcance | Puntos | Velocidad 17 | Velocidad 19 | Velocidad 21 | ¿Cabe al 07/12? |
+|---|---:|---|---|---|---|
+| Backlog del proyecto | 66 | 3 × 17 + 11 = 62 → faltan 4 | 3 × 19 + 13 = 70 → cabe | 3 × 21 + 15 = 78 → sobran 12 | Sí, en los escenarios central y favorable |
+
+- **Conservador (17):** faltan 4 puntos. Se retira HU-10 (plantillas curvas, 5 puntos), la de menor efecto sobre el Product Goal, consultándolo antes con la profesora, y se declara como pendiente. No se reduce la DoD para aparentar cumplimiento.
+- **Central (19):** las 11 historias se completan con 4 puntos de holgura.
+- **Favorable (21):** sobran 12 puntos de capacidad. Se dedican a más casos de prueba, refinamiento y documentación; no se agregan funciones fuera del alcance sin aprobación de la profesora.
+
+### Release Plan del proyecto
+
+| Sprint | Periodo | Meta del Sprint | Historias | Puntos / capacidad |
+|---|---|---|---|---:|
+| 1 | 14/10–28/10/2026 | Motor base: colocación válida con imagen, indicadores, línea base y rotaciones; plataforma web navegable | HU-01 a HU-04 | 19 / 19 |
+| 2 | 28/10–11/11/2026 | Algoritmo genético funcional y registro validado de piezas rectas y por coordenadas | HU-05 y HU-06 | 16 / 19 |
+| 3 | 11/11–25/11/2026 | Caso completo ejecutable desde la web: rollos, prendas, tallas, cantidades y comparación base / genético / manual | HU-07 a HU-09 | 18 / 19 |
+| 4 | 25/11–07/12/2026 | Resultados visuales, órdenes de producción, piezas curvas y cierre del proyecto | HU-10 y HU-11 | 13 / 13 |
+| **Total** | | **Incremento final integrado y verificable** | **11 historias** | **66 / 70** |
+
+#### Release Plan replanificado (11/11/2026)
+
+El periodo original del Sprint 2 (28/10–11/11) transcurrió sin ejecutarse, por lo que desde el 11/11 los Sprints se renumeran. El 15/11 se confirmó que la entrega final del curso es el **24/11/2026**, así que el Sprint 2 es el último: el Sprint 3 propuesto en el Acta de Sprint Review (HU-05 y HU-09) no se ejecuta y esas historias quedan pendientes.
+
+| Sprint | Periodo | Meta del Sprint | Historias | Puntos / capacidad | Estado |
+|---|---|---|---|---:|---|
+| 1 | 14/10–28/10/2026 | Motor base | HU-01 a HU-04 | 0 de 19 terminados | Cerrado |
+| 2 | 11/11–24/11/2026 | Trazo válido y reproducible con rotaciones, indicadores, línea base y plataforma web navegable, más demo e informe final; primero, AM-01 | HU-01 a HU-04, más AM-01 a AM-03, M-01, M-02, M-05, M-06 y M-07 | 19 / 19 | En curso (Jira); último Sprint |
+| — | — | Pendiente al cierre | HU-05 a HU-09 y HU-11 (42 puntos); HU-10 (5 puntos) retirada el 11/11 | — | Se declara en el informe final |
+
+**Hitos de entrega:** cada Sprint termina con una Sprint Review en la que se demuestra el Incremento a la profesora y, cuando sea posible, a dueños de talleres y patronistas. En el plan original eran 28/10 (motor base), 11/11 (optimización genética y registro de piezas), 25/11 (hito de integración: flujo completo desde la web) y 07/12 (cierre del proyecto con la demo final, el informe final y el Expediente completo). Con la replanificación, el único hito restante es el **24/11/2026**: Review del Sprint 2 y entrega final (Expediente completo, informe final y demostración del incremento).
+
+### Secuencia y control del cronograma
+
+La cadena principal es **colocación → rotaciones → algoritmo genético → ejecución web → visualización y órdenes**. El registro de piezas (HU-06) avanza en paralelo con el algoritmo genético, porque la trabaja la otra integrante. Un retraso del motor afecta al resultado integrado y se inspecciona en cada Daily Scrum.
+
+Se registra un burndown del proyecto con **fecha, puntos pendientes previstos, puntos pendientes reales, historias terminadas y motivo de variación**. Los puntos reales bajan solo al completar historias con DoD.
+
+| Corte | Pendiente previsto | Pendiente real | Acción de revisión |
+|---|---:|---|---|
+| 14/10, inicio del Sprint 1 | 66 | 66 | Confirmar capacidad y datos de prueba |
+| 28/10, cierre del Sprint 1 | 47 | 66 (velocidad 0; ver Acta de Sprint Review) | Medir la primera velocidad y reestimar lo restante |
+| 11/11, cierre del Sprint 2 | 31 | 61 (Sprint 2 sin ejecutar; HU-10 retirada) | Reajustar el calendario y el alcance con la profesora (AM-03) |
+| 24/11, cierre del Sprint 2 y entrega final | 42 (plan replanificado) | Futuro | Declarar el alcance logrado y los pendientes con evidencia; las filas del 25/11 y 07/12 del plan original ya no aplican |
+
+Si la velocidad observada o un bloqueo hacen inviable el plan, la Product Owner propone retirar primero las historias de prioridad Media, las Developers recalculan dependencias y el equipo consulta a la profesora cuando cambia el compromiso académico. Las historias retiradas se declaran como pendientes en el informe final.
+
+### Estimación y presupuesto académico
+
+**Moneda: colones costarricenses (CRC).** Los importes son supuestos didácticos para valorar el esfuerzo; no son cotizaciones, salarios reales ni gastos efectuados. Se usa una tarifa hipotética de **₡3.000 por hora**.
+
+| Concepto | Base de cálculo | Horas | Estimación |
+|---|---|---:|---:|
+| Inicio y preparación (16/09–14/10) | 2 integrantes × 20 h × 4 semanas | 160 | ₡480.000 |
+| Sprints 1 a 3 (14/10–25/11) | 3 Sprints × 80 h | 240 | ₡720.000 |
+| Sprint 4 y cierre (25/11–07/12) | 2 integrantes × 4 h diarias × 9 días hábiles | 72 | ₡216.000 |
+| Herramientas | Python, Shapely, DEAP, framework web y GitHub de uso gratuito; ejecución local | — | ₡0 |
+| **Base estimada del proyecto** | | **472** | **₡1.416.000** |
+| Reserva de contingencia | 10 % de la base, para retrabajo o imprevistos identificados | — | ₡141.600 |
+| **Presupuesto del proyecto** | **Base + contingencia** | | **₡1.557.600** |
+
+**Costo por Sprint:** 80 h × ₡3.000 = ₡240.000 en los Sprints 1 a 3 y ₡216.000 en el Sprint 4 (72 h). **Costo de los cuatro Sprints:** ₡936.000; el resto de la base corresponde al inicio y la preparación.
+
+Las horas incluyen eventos de Scrum, pruebas, documentación, informe y demo. Equipos, electricidad e internet existentes no se valoran por falta de datos, por lo que este presupuesto no representa un costo comercial completo.
+
+### Seguimiento de costos
+
+Cada integrante registra sus horas reales por semana y actividad. En cada Review se comparan las horas previstas y reales y el costo valorado a la tarifa hipotética. Un costo valorado del esfuerzo no se presenta como dinero pagado.
+
+| Corte | Base acumulada prevista, sin reserva | Esfuerzo real valorado | Explicación |
+|---|---:|---|---|
+| 14/10, antes del Sprint 1 | ₡480.000 | Sin registro de horas reales | Inicio y preparación. No se anotaron horas por semana ni por actividad |
+| 28/10, cierre del Sprint 1 | ₡720.000 | Sin registro de horas reales; se registra desde el 12/11 (AM-02) | Preparación + un Sprint. No se anotaron horas por semana ni por actividad, por lo que no se puede valorar el esfuerzo real (ver Acta de Sprint Retrospective) |
+| 11/11, cierre del Sprint 2 | ₡960.000 | Sin registro de horas reales | Preparación + dos Sprints. El Sprint 2 original no se ejecutó; las horas se registran desde el 12/11 (AM-02) |
+| 24/11, cierre del proyecto | ₡1.200.000 | Futuro | Preparación + tres periodos de Sprint. Con el cierre el 24/11 no se ejecutan las 72 h del Sprint 4 (₡216.000), por lo que la base estimada baja a ₡1.200.000 |
+
+Toda utilización de la reserva se documenta con fecha, causa, importe y saldo. Si cambian la disponibilidad, la tarifa de referencia, el número de Sprints o las herramientas, se recalcula el presupuesto, conservando la comparación con esta versión.
+
+---
+
+**Semana 7**
+
+---
+
+## Plan de comunicaciones y tablero de trabajo
+
+Define quién recibe qué información, cuándo y por qué canal, quién responde por cada actividad y cómo se hace visible el trabajo del equipo. Parte del registro de interesados y del mapa Poder-Interés.
+
+### Plan de comunicaciones
+
+| Interesado | Poder / interés | Estrategia | Información que necesita | Frecuencia y evento | Canal | Responsable |
+|---|---|---|---|---|---|---|
+| Dueños/gerentes de talleres | 5 / 5 | Gestionar de cerca | Incremento logrado, indicadores de aprovechamiento y desperdicio, cambios de alcance | Cada Sprint Review (cada dos semanas); aviso el mismo día si cambia el alcance | Demostración presencial o virtual y correo con resumen | Jimena (Product Owner) |
+| Patronistas | 4 / 5 | Gestionar de cerca | Formas de pieza admitidas, validaciones y casos de prueba | Sprint Review y entrega final del 24/11 (validación del trazo); consultas puntuales al refinar historias | Sesión de validación y correo | Jimena (Product Owner) |
+| Profesora evaluadora | 5 / 4 | Gestionar de cerca | Avance del Expediente, decisiones de alcance e impedimentos que afecten la evaluación | Semanal, en cada clase; inmediato si un cambio afecta un compromiso académico | Clase, repositorio GitHub (commits e historial de versiones) y correo institucional | Fernanda (Scrum Master) |
+| Operarios de corte | 2 / 4 | Mantener informado | Cómo leer la distribución propuesta y la numeración de piezas | Sprint Review y entrega final (24/11) | Demostración y guía breve de lectura del trazo | Fernanda |
+| Equipo desarrollador | 3 / 5 | Mantener informado | Estado de tareas, bloqueos y decisiones técnicas | Diario, en el Daily Scrum de 15 minutos | Tablero de trabajo y grupo de mensajería del equipo | Fernanda (Scrum Master) |
+| Área contable/financiera | 4 / 2 | Mantener satisfecha | Costo estimado del proyecto y desperdicio comparado | Al cierre del proyecto (24/11) o si cambia el presupuesto | Resumen del informe final | Jimena |
+| Compras/inventario de tela | 2 / 3 | Monitorear | Datos de rollos que se registran (ancho, largo, tipo) | Al refinar HU-07 (pendiente desde el 15/11) | Correo | Jimena |
+| Proveedores de tela | 1 / 2 | Monitorear | Ninguna periódica; solo consultas sobre anchos estándar de rollo | Si se necesita | Correo | Jimena |
+
+### Matriz de responsabilidades (RACI)
+
+Aclara quién hace qué en las actividades del proyecto, combinando los roles del PMBOK con los de Scrum. Lectura: **R** = hace el trabajo · **A** = responde por el resultado · **C** = se le consulta · **I** = se le informa. Cada fila tiene una sola **A**; una fila con dos o sin ninguna indica una decisión que nadie toma.
+
+**Roles:** Product Owner = Jimena · Scrum Master = Fernanda · Developers = Jimena y Fernanda · Profesora = evaluadora del proyecto · Interesados = dueños de talleres y patronistas.
+
+| Actividad | Product Owner | Scrum Master | Developers | Profesora | Interesados |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Definir y comunicar el Product Goal | A / R | I | C | I | C |
+| Ordenar el Product Backlog y priorizar historias | A / R | C | C | I | C |
+| Redactar historias y criterios de aceptación | A / R | C | C | — | C |
+| Estimar las historias (Planning Poker) | C | C | A / R | — | — |
+| Elaborar el Sprint Backlog y el plan del Sprint | C | C | A / R | — | — |
+| Definir y cumplir la Definition of Done | C | C | A / R | I | — |
+| Implementar y probar las historias | I | I | A / R | — | — |
+| Revisar el código (pull request de la otra integrante) | — | I | A / R | — | — |
+| Mantener el tablero y registrar el Daily Scrum (AM-02) | I | A | R | — | — |
+| Facilitar los eventos de Scrum | C | A / R | C | — | I |
+| Remover impedimentos | C | A / R | C | — | — |
+| Aceptar el Incremento en la Sprint Review | A / R | C | C | C | C |
+| Proponer cambios de alcance, fecha o costo | A / R | C | C | C | I |
+| Aprobar cambios que afectan un compromiso académico (AM-03) | R | C | C | A | I |
+| Identificar, reevaluar y dar seguimiento a los riesgos | C | A | R | I | — |
+| Comunicar el avance a la profesora | I | A / R | C | I | — |
+| Comunicar el avance a talleres y patronistas | A / R | I | C | — | I |
+| Registrar horas y comparar costos en la Review | A | I | R | — | — |
+| Mantener el Expediente y el repositorio (commits e historial) | C | C | A / R | I | — |
+| Preparar la Demo y el informe final | A | C | R | I | I |
+
+Las responsabilidades individuales de cada historia y tarea están en Jira y en la sección [Product Backlog priorizado](#product-backlog-priorizado).
+
+### Reglas del equipo
+
+- **Tiempos de respuesta:** los mensajes del equipo se responden en un máximo de 24 horas hábiles; un bloqueo se comunica el mismo día en que aparece, sin esperar al siguiente Daily Scrum.
+- **Dónde se decide qué:** el orden y el alcance del Product Backlog los decide la Product Owner; la forma técnica de cumplir el Sprint Goal la deciden las Developers en el Sprint Planning y el Daily Scrum; un cambio que afecte un compromiso académico se consulta con la profesora.
+- **Registro de decisiones:** toda decisión de alcance, fecha o costo se anota en el registro de seguimiento del Expediente con su fecha y motivo. Lo que se acuerda por mensajería se pasa al tablero o al Expediente el mismo día.
+
+### Escalamiento de impedimentos y conflictos
+
+1. Quien detecta el impedimento lo marca en su tarjeta y lo comunica en el Daily Scrum o por mensaje el mismo día.
+2. La Scrum Master facilita una solución en un plazo de 24 horas hábiles.
+3. Si pone en riesgo el Sprint Goal, la Product Owner decide qué ajustar del Sprint Backlog, sin alargar el Sprint.
+4. Si afecta el alcance comprometido o la fecha de entrega del 24/11, se consulta con la profesora.
+
+Un desacuerdo entre las integrantes se conversa primero de forma directa; si no se resuelve, la Scrum Master facilita la discusión con criterios del Product Goal y la DoD, y como último paso se consulta a la profesora.
+
+### Tablero de trabajo
+
+**Herramienta:** Jira Software, proyecto Scrum con clave MER; los límites WIP se configuran como máximo de cada columna del tablero. **Enlace:** [Tablero MER – Gestión de Mermas](https://mariajimenajr14-1793571646419.atlassian.net/jira/software/projects/MER/boards/2/backlog). Las historias son incidencias de tipo Historia con sus puntos y su épica (E1, E2 o E3); las tareas T-01 a T-18 son subtareas de su historia, con su responsable asignada. Las historias de los Sprints siguientes esperan en el Backlog de Jira, fuera del Sprint activo.
+
+| Columna | Significado | Límite WIP | Regla de entrada |
+|---|---|---:|---|
+| Backlog (vista aparte) | Historias de los Sprints 2 a 4, ordenadas por prioridad | — | Historia con criterios de aceptación, puntos y épica |
+| Por hacer | Tareas del Sprint Backlog aún no iniciadas | — | Tarea con responsable, historia asociada y evidencia esperada |
+| En curso | Tareas que alguien está desarrollando | 2 (una por integrante) | La responsable la mueve al empezar; no inicia otra hasta liberar la actual |
+| En revisión | Tareas terminadas por su responsable, en espera de revisión de la otra integrante | 2 | Pull request abierto, pruebas pasando y evidencia adjunta |
+| Terminada | Tareas revisadas que cumplen la DoD | — | Revisión aprobada e integración a `main` |
+
+**Justificación del WIP:** con dos integrantes, una tarea en curso por persona evita trabajo duplicado y obliga a terminar antes de empezar otra. El límite de dos en revisión impide que se acumule trabajo sin revisar, porque cada revisión la hace la otra integrante.
+
+**Incidencias del Sprint 1:** las historias HU-01 a HU-04 y sus subtareas, T-01 a T-18, cada una con su responsable visible según la tabla del Sprint Backlog.
+
+**Estado del tablero al 15/11/2026:** el Sprint 1 está cerrado en Jira y el Sprint 2 (11/11–24/11) está activo como último Sprint con HU-01 a HU-04, T-01 a T-18, AM-01 a AM-03 (etiqueta `mejora`) y M-01, M-02, M-05, M-06 y M-07 (etiqueta `riesgo`). HU-05 a HU-11 llevan la etiqueta `pendiente`. Las historias tienen responsable, sus dependencias registradas como vínculos "bloquea" y HU-10 lleva la etiqueta `pendiente`.
+
+**Regla para mover a Terminada:** una tarea pasa a Terminada solo con su evidencia, la revisión de la otra integrante y la integración a `main`. Una historia está terminada cuando todas sus tareas lo están y cumple sus criterios de aceptación y la DoD.
+
+---
+
+**Semana 8**
+
+---
+
 ## Riesgos y adquisiciones
-**Sección 08 · Semana 7**
 
 Esta sección amplía los riesgos iniciales del acta (complejidad geométrica, sobreestimación de capacidad, falta de patrones reales e integración tardía) con lo que revelaron la matriz de estimación, el cronograma y la Definition of Done. Registra además las dependencias externas que sostienen el prototipo. Las calificaciones se reevalúan al registrar la Review del Sprint 1 y la velocidad observada.
 
@@ -1085,7 +1562,7 @@ De las 13 amenazas, 7 están en zona alta, 4 en vigilancia y 2 en aceptación. C
 
 ### Acciones de mitigación en el Sprint Backlog
 
-Se agregan al Sprint Backlog y al tablero de Jira como subtareas con la etiqueta `riesgo`, sin modificar las tareas T-01 a T-18 ni las historias. Se estiman en horas y no suman puntos de historia ni velocidad.
+Se agregan al Sprint Backlog y al tablero de Jira como tareas con la etiqueta `riesgo` (MER-47 a MER-53), sin modificar las tareas T-01 a T-18 ni las historias. Se estiman en horas y no suman puntos de historia ni velocidad.
 
 | Ítem | Riesgo | Acción | Sprint | Responsable | Horas | Capacidad | Estado | Evidencia esperada |
 |---|---|---|---|---|---:|---|---|---|
@@ -1096,6 +1573,8 @@ Se agregan al Sprint Backlog y al tablero de Jira como subtareas con la etiqueta
 | M-05 | R-06, O-02 | Solicitud a un taller o patronista y demostración corta | Sprint 3, antes del 18/11 | Jimena | 2 | Holgura del Sprint 3 y reserva | Por hacer | Mensaje enviado y respuesta registrada |
 | M-06 | R-08 | Esqueleto del informe final y lista de evidencias | Sprint 3, antes del 25/11 | Fernanda | 2 | Reserva | Por hacer | Esqueleto en el repositorio |
 | M-07 | R-11 | Ensayo de la demo y material de respaldo | Sprint 4 | Fernanda | 2 | Dentro de las 12 h de cierre | Por hacer | Capturas o video de respaldo |
+
+**Actualización del 11/11/2026:** con la renumeración de los Sprints (ver Release Plan replanificado), M-01, M-02, M-05 y M-06 están en el Sprint 2 (11/11–24/11). Desde el 15/11, con la entrega final el 24/11, M-06 se adelanta al 20/11 y M-07 entra al Sprint 2 con fecha 23/11; M-03 y M-04 quedan en el backlog hasta que se activen. En Jira son MER-47 a MER-53. Las menciones al 25/11, al 07/12 y a los Sprints 3 y 4 en esta sección corresponden al plan original de la Semana 8.
 
 **Efecto en capacidad y costo:** M-01, M-02, M-04, M-05 y M-06 suman 11 h, equivalentes a unos 4 puntos, es decir, toda la holgura del cronograma (10,8 h). Los ítems del Sprint 2 (5 h) caben en su holgura. En el Sprint 3 los tres ítems suman 6 h frente a 2,7 h de holgura, y las 3,3 h restantes se cargan a la reserva (₡9.900). Con M-03 en su máximo (₡12.000), el uso previsto de la reserva es de ₡21.900 de los ₡141.600, con un saldo de ₡119.700. El cálculo es conservador porque no descuenta las horas que M-06 saca del cierre. Cada uso real se registra con fecha, causa, importe y saldo, como indica el seguimiento de costos. Como la holgura queda agotada, retirar HU-10 sigue siendo la respuesta de último recurso.
 
@@ -1135,298 +1614,108 @@ Un riesgo que se materializa pasa al registro de seguimiento como incidencia, co
 | R-03, R-04, R-05, R-12 | HU-01, HU-03, HU-05, HU-08 y HU-09; RNF-01 y RNF-03; DoD v1.1 |
 | R-06, R-13 | EEF de acceso a usuarios, de patrones y de privacidad; plan de comunicaciones |
 | R-07 | Mecanismo de cambios y plan de comunicaciones |
-| R-09, R-10, R-11 | DoD v1.1 (criterio 5 y ambiente de pruebas), tablero de trabajo y restricción de demostración local |## Definition of Done v1.1
-**Sección 09 · Semana 8**
+| R-09, R-10, R-11 | DoD v1.1 (criterio 5 y ambiente de pruebas), tablero de trabajo y restricción de demostración local |
 
-**Propósito:** para este producto, "terminado" significa que la historia hace lo que pide (sus criterios de aceptación) y está bien hecha: probada, revisada, integrada y documentada, de modo que forma parte de un Incremento que se puede demostrar sin pasos ocultos. La DoD aplica a todas las historias del Product Backlog. Una historia que no la cumple no se presenta en la Sprint Review y regresa al Product Backlog.
+---
 
-### Criterios de calidad
+**Semana 9**
 
-1. Sus criterios de aceptación se verifican y se registra el resultado con datos de entrada y salida esperada.
-2. El código está integrado en la rama principal (`main`) del repositorio, sin romper la ejecución, y fue revisado por la otra integrante mediante un pull request; se conserva referencia al commit y a la revisión.
-3. Pasan las pruebas exigidas de la historia y las regresiones de geometría y métricas que pueda afectar. No quedan errores conocidos que invaliden el trazo, los indicadores o el flujo principal.
-4. Las entradas inválidas producen mensajes comprensibles; las unidades y restricciones se muestran o documentan. Los porcentajes se comparan con tolerancia de 0,01 puntos porcentuales por redondeo.
-5. Se puede ejecutar desde una copia limpia del repositorio en el equipo de pruebas, siguiendo las instrucciones y versiones de dependencias documentadas; los datos de prueba necesarios están disponibles.
-6. Se adjunta una evidencia adecuada: salida, imagen, prueba o captura, sin información confidencial. Para el optimizador se registran semilla y parámetros.
-7. El expediente, el backlog y las instrucciones se actualizan para reflejar el comportamiento real y sus limitaciones.
-8. En historias de interfaz se comprueba RNF-02; en historias de optimización se comprueban RNF-01 y RNF-03. Una excepción requiere cambiar explícitamente el alcance o criterio antes de la aceptación; no se omite silenciosamente.
+---
 
-### Pruebas exigidas
+## Acta de Sprint Review y Sprint Retrospective
 
-| Tipo | Cuándo se exige | Ejemplo en el proyecto |
+Acta de los dos eventos de cierre del **Sprint 1** (14/10/2026 – 28/10/2026), simulados en la clase de la Semana 9 con los roles del Scrum Team: Jimena como Product Owner, Fernanda como Scrum Master y ambas como Developers. El estado del Incremento se toma del repositorio y del Sprint Backlog versionado; no se declara ningún avance que no tenga evidencia.
+
+### Acta de Sprint Review
+
+| Dato | Detalle |
+|---|---|
+| Fecha | 11/11/2026 (clase de la Semana 9), sobre el Sprint 1 cerrado el 28/10/2026 |
+| Duración | 1 hora (dentro del máximo de 2 horas para un Sprint de dos semanas) |
+| Asistentes | María Jimena Jara Rojas (Product Owner y Developer) y María Fernanda Sibaja Campos (Scrum Master y Developer) |
+| Interesados | Un dueño de taller y un patronista, representados por las integrantes en la simulación; la profesora observa la sesión |
+
+**Sprint Goal:** obtener un trazo válido y reproducible de piezas sobre un rollo de ancho definido, que respete las rotaciones permitidas, con sus indicadores y una línea base de comparación. **Resultado: no cumplido.** El repositorio contiene únicamente el Expediente; no hay código del motor, imágenes del trazo ni resultados de pruebas, y las 18 tareas T-01 a T-18 siguen en Por hacer.
+
+#### Historias revisadas contra la DoD
+
+| Historia | Puntos | Evidencia disponible | ¿Cumple la DoD? | Decisión |
+|---|---:|---|---|---|
+| HU-01 Colocación automática e imagen del trazo | 8 | Datos y tareas descritos; sin código ni pruebas | No | No se demuestra; regresa al Product Backlog |
+| HU-02 Indicadores y línea base | 5 | Fórmulas y casos definidos; sin cálculo ejecutado | No | No se demuestra; regresa al Product Backlog |
+| HU-03 Rotaciones y dirección del hilo | 3 | Criterios definidos; sin implementación | No | No se demuestra; regresa al Product Backlog |
+| HU-04 Plataforma web adaptable | 3 | Tablero en Jira creado el 01/11; sin proyecto web ni capturas | No | No se demuestra; regresa al Product Backlog |
+
+**Puntos completados (velocidad del Sprint 1): 0 de 19.** Las tareas parciales no suman puntos, según la DoD v1.1. Lo único entregado en el Sprint es documentación del proceso (backlog replanificado, DoD v1.1, plan de comunicaciones y tablero), que no forma parte del Incremento del producto.
+
+#### Retroalimentación recibida (simulada)
+
+- **Dueño de taller:** antes de cualquier otra función necesita ver la imagen del trazo y el porcentaje de desperdicio de un caso conocido. Confirma que HU-01 y HU-02 son lo primero.
+- **Patronista:** las piezas curvas pueden esperar; lo urgente es que el registro de piezas rechace formas inválidas con un mensaje claro.
+- **Profesora (observación):** se debe declarar con transparencia lo que no se logró y ajustar el compromiso con la capacidad real.
+
+#### Cambios al Product Backlog acordados
+
+1. HU-01 a HU-04 permanecen en las primeras posiciones del Product Backlog y se trabajan primero; no se reabren ni se parten, porque ninguna avanzó lo suficiente para reducir su tamaño.
+2. **HU-10 (piezas curvas, 5 puntos, prioridad Media) se retira a pendiente**, con el aviso a la profesora, siguiendo la regla del Cronograma de Entregas.
+3. Se mantiene el orden del resto de las historias. Quedan 61 puntos comprometidos.
+
+#### Estado del release frente al Cronograma de Entregas
+
+| Corte | Pendiente previsto | Pendiente real | Variación y motivo |
+|---|---:|---:|---|
+| 28/10, cierre del Sprint 1 | 47 | 66 | +19 puntos: ninguna historia terminó con la DoD. Causa principal: backlog y capacidad replanificados recién el 01/11, sin código en el repositorio y sin seguimiento diario. |
+| 11/11, cierre previsto del Sprint 2 | 31 | 61 | +30 puntos: el periodo del Sprint 2 (28/10–11/11) transcurrió sin Sprint Planning ni historias terminadas. La reducción de 66 a 61 se debe solo a retirar HU-10, no a trabajo completado. |
+
+**Capacidad restante.** Al 11/11 quedan dos periodos de Sprint en el calendario: 11/11–25/11 (19 puntos) y 25/11–07/12 (13 puntos), es decir, **32 puntos**, frente a **61 puntos** comprometidos después de retirar HU-10: **faltan 29 puntos**. La velocidad observada de 0 no sustituye a la estimada de 19, porque en el Sprint 1 no se ejecutó trabajo de desarrollo; la velocidad se recalcula al cerrar el próximo Sprint con trabajo real.
+
+**Propuesta de la Product Owner (pendiente de consulta a la profesora, acción AM-03):** conservar la cadena que sostiene el Product Goal y el Objetivo específico 3, HU-01 a HU-05 y HU-09 (32 puntos), y declarar como pendientes HU-06, HU-07, HU-08 y HU-11 (29 puntos), sin reducir la DoD ni dar crédito parcial a historias incompletas. Con esta propuesta, la comparación entre la línea base y el algoritmo genético se demuestra desde el motor y la plataforma web queda en su estructura navegable (HU-04), por lo que el Product Goal se cumpliría solo en parte; por eso la propuesta no se aplica hasta contar con el criterio docente. La propuesta no deja holgura: la velocidad real se revisa el 25/11, antes de comprometer el último Sprint. La validación de formas inválidas que pidió la patronista se cubre en parte con HU-01 (pieza más ancha que el rollo) y HU-03 (rechazo de violaciones); HU-06 es la primera historia pendiente que se recupera si la velocidad lo permite. La decisión final se anota en el registro de seguimiento.
+
+**Actualización posterior (15/11/2026):** se confirmó que la entrega final del curso es el **24/11/2026**. Con eso no queda tiempo para un Sprint 3: el Sprint 2 (11/11–24/11) es el último y solo cubre HU-01 a HU-04 (19 puntos). HU-05 y HU-09 tampoco entran, por lo que la comparación con el algoritmo genético queda pendiente junto con HU-06 a HU-08 y HU-11. Esta decisión reemplaza la propuesta anterior y está en el registro de seguimiento y en el Release Plan replanificado.
+
+#### Revisión de riesgos
+
+Según el seguimiento de riesgos, en esta Review se reevalúan los riesgos de zona alta:
+
+| Riesgo / ítem | Situación al 11/11 | Respuesta |
 |---|---|---|
-| Unitarias (automáticas) | Toda función nueva del motor: colocación, indicadores, rotaciones, algoritmo genético y validación de piezas | Una pieza nunca queda fuera del ancho del rollo; aprovechamiento y desperdicio suman 100 % |
-| De integración | Cuando una historia conecta partes: motor con la web o captura con la optimización | Un caso capturado en la web produce la misma distribución que el motor con los mismos datos y semilla |
-| Manuales | Historias de interfaz y verificación de criterios en la Sprint Review | Revisión de pantallas en 360 y 1280 píxeles; lectura de la imagen del trazo |
+| R-01 Velocidad menor que la estimada | **Materializado:** velocidad 0, por debajo del disparador de 17, y pendiente real (61) mayor que el previsto (31) | Se aplica la contingencia: HU-10 se retira a pendiente. El respaldo del plan protege HU-01 a HU-05, HU-08, HU-09 y HU-11 (45 puntos), pero la capacidad restante es de 32; por eso se consulta a la profesora la propuesta anterior (AM-03) |
+| R-05 Integración tardía | **Disparador activado:** al 11/11 no hay formato de datos acordado entre motor y web | M-02 se reprograma al siguiente Sprint |
+| M-01 y M-02 (Sprint 2, hasta el 11/11) | Sin evidencia en el repositorio; el Sprint 2 no se ejecutó | Se reprograman al siguiente Sprint, después de AM-01 |
+| R-02, R-03, R-04, R-06 y R-08 | Sin cambios: no hubo trabajo de desarrollo que los active | Se mantienen las acciones y fechas del Plan de Mitigación; M-05 sigue con fecha 18/11 |
 
-### Integración y ambiente de pruebas
+### Acta de Sprint Retrospective
 
-El trabajo se desarrolla en ramas por historia y se integra a `main` solo después de la revisión de la otra integrante y con las pruebas pasando. El ambiente de pruebas es una copia limpia del repositorio en la computadora de la integrante que no desarrolló la historia, ejecutada en local, sin depender de alojamiento externo.
+| Dato | Detalle |
+|---|---|
+| Fecha | 11/11/2026, después de la Review |
+| Participantes | Solo el Scrum Team: Jimena y Fernanda |
+| Formato | Start / Stop / Continue |
+| Seguimiento de acciones anteriores | No existen acciones de una Retrospective previa; esta es la primera |
 
-### Documentación mínima
+#### Qué funcionó y qué no, con evidencia
 
-Instrucciones de instalación y ejecución en el repositorio, descripción de los datos de prueba, parámetros del optimizador utilizados y actualización del Expediente.
-
-### Acuerdo y versión
-
-| Versión | Fecha | Cambio | Acordada por |
-|---|---|---|---|
-| 1.0 | 14/10/2026 | Primera versión con ocho criterios de calidad | Developers y Product Owner |
-| 1.1 | 01/11/2026 | Se agregan propósito, pruebas exigidas, rama principal y ambiente de pruebas, según la guía de la Semana 5 | Developers y Product Owner |
-
-La Review inspecciona el incremento y orienta el backlog; no convierte en terminado lo que incumple la DoD. La velocidad se calcula con los puntos completos de historias terminadas, sin crédito parcial por subtareas.
-
----
-
-## Estimación de subtareas del Sprint 1
-**Sección 07 · Semana 6**
-
-Escala Fibonacci utilizada: **1, 2, 3, 5, 8 y 13**. Los totales de subtareas son sumas de tareas, no estimaciones de historias completas, y no se usan como velocidad.
-
-### HU-01: Colocación automática de piezas sobre el rollo de tela sin traslapes
-
-| ID | Subtarea | Puntos | Responsable |
-|---|---|---:|---|
-| T-01 | Definir las piezas y dimensiones del rollo de tela. | 3 | Jimena |
-| T-02 | Implementar la colocación automática con Bottom-Left y Shapely. | 8 | Fernanda |
-| T-03 | Validar que las piezas no se traslapen ni salgan del rollo. | 5 | Jimena |
-| T-04 | Validar piezas que excedan el ancho del rollo. | 3 | Fernanda |
-| T-05 | Comprobar que la distribución sea reproducible. | 3 | Jimena |
-| T-06 | Generar una imagen de la distribución de piezas. | 5 | Fernanda |
-| T-07 | Realizar pruebas con diferentes formas geométricas. | 5 | Jimena |
-| **Total HU-01** | | **32** | |
-
-### HU-02: Indicadores de aprovechamiento y desperdicio y línea base
-
-| ID | Subtarea | Puntos | Responsable |
-|---|---|---:|---|
-| T-08 | Calcular el largo de tela consumido. | 3 | Fernanda |
-| T-09 | Calcular el porcentaje de aprovechamiento y desperdicio. | 3 | Jimena |
-| T-10 | Mostrar los indicadores y validar los resultados mediante pruebas. | 5 | Fernanda |
-| T-11 | Ordenar las piezas de mayor a menor área. | 2 | Jimena |
-| T-12 | Ejecutar la línea base y registrar sus indicadores en tres casos. | 3 | Jimena |
-| **Total HU-02** | | **16** | |
-
-### HU-03 y HU-04
-
-| ID | Historia | Subtarea | Puntos | Responsable |
-|---|---|---|---:|---|
-| T-13 | HU-03 | Modelar la dirección del hilo y las rotaciones permitidas por pieza. | 3 | Jimena |
-| T-14 | HU-03 | Evaluar solo las orientaciones permitidas durante la colocación. | 5 | Fernanda |
-| T-15 | HU-03 | Probar la conservación de la orientación y el rechazo de violaciones. | 3 | Jimena |
-| T-16 | HU-04 | Crear el proyecto web con la navegación principal. | 3 | Fernanda |
-| T-17 | HU-04 | Aplicar el diseño adaptable y verificarlo en 360 y 1280 píxeles. | 3 | Jimena |
-| T-18 | HU-04 | Documentar las instrucciones de ejecución local. | 2 | Jimena |
-| **Total HU-03 y HU-04** | | | **19** | |
-
-### Resumen de estimación y responsables
-
-| Responsable | HU-01 | HU-02 | HU-03 | HU-04 | Total |
-|---|---:|---:|---:|---:|---:|
-| Jimena | 16 | 8 | 6 | 5 | 35 |
-| Fernanda | 16 | 8 | 5 | 3 | 32 |
-| **Total** | **32** | **16** | **11** | **8** | **67** |
-
-**Estimación total de las subtareas del Sprint 1:** 67 puntos de subtareas para 19 puntos de historias. Las subtareas de cada Sprint siguiente se definen en su Sprint Planning.
-
----
-
-## Matriz de estimación
-**Sección 07 · Semana 6**
-
-### Escala e historias de referencia
-
-Se utiliza Fibonacci **1, 2, 3, 5, 8, 13**. Los puntos expresan tamaño relativo, complejidad e incertidumbre. Cada historia se estima comparándola con estas referencias:
-
-| Puntos | Historia de referencia | Por qué |
-|---:|---|---|
-| 3 | **HU-03 · Rotaciones permitidas (referencia principal)** | Regla acotada sobre la colocación existente, con casos de prueba claros. |
-| 5 | HU-02 · Indicadores y línea base | Fórmulas conocidas y un orden simple, con varios casos de resultado esperado. |
-| 8 | HU-01 · Colocación sin traslapes e imagen | Geometría de polígonos, casos límite, reproducibilidad e imagen; la mayor incertidumbre técnica del inicio. |
-| 13 | — | Tamaño de épica: debe dividirse antes de entrar a un Sprint. Ninguna historia del backlog lo alcanza. |
-
-Antes de cada Sprint Planning, ambas integrantes estiman de forma independiente con Planning Poker, revelan sus valores a la vez, discuten las diferencias y repiten la votación. Se anotan la fecha, la cifra inicial, la cifra acordada y el motivo del cambio.
-
-### Capacidad del equipo y velocidad estimada
-
-Supuestos: dos desarrolladoras junior con **20 horas semanales cada una**, Sprints de dos semanas (10 días hábiles) y un factor de enfoque de 0,8 por la curva de aprendizaje de Shapely, DEAP y el desarrollo web, la revisión entre pares y los imprevistos.
-
-| Concepto | Cálculo | Horas por Sprint |
-|---|---|---:|
-| Disponibilidad del equipo | 2 integrantes × 20 h × 2 semanas | 80 |
-| Eventos de Scrum | (Planning 2 h + Review 1 h + Retrospective 1 h + Refinamiento 1 h + Daily 15 min × 10 días = 2,5 h) × 2 integrantes | −15 |
-| Horas para desarrollo | 80 − 15 | 65 |
-| Horas productivas | 65 × 0,8 | 52 |
-| Equivalencia de referencia | HU-03 (3 puntos) ≈ 8 h de una persona junior, con pruebas y documentación → 2,7 h por punto | — |
-| **Velocidad estimada** | **52 ÷ 2,7 ≈ 19 puntos por Sprint** | — |
-
-La equivalencia de 2,7 horas por punto se usa solo para dimensionar la capacidad; las historias se siguen estimando por comparación. Con factores de enfoque de 0,7 y 0,9 resultan **17 y 21 puntos**, que definen los escenarios conservador y favorable.
-
-**Sprint 4 (25/11–07/12):** tiene 9 días hábiles (72 h). Descontando los eventos (15 h) y las actividades de cierre (12 h: informe final, expediente, preparación de la demo y lecciones aprendidas), quedan 45 h × 0,8 = 36 h productivas, es decir, **13 puntos**.
-
-### Totales por épica y Sprint
-
-| Épica | Sprint 1 | Sprint 2 | Sprint 3 | Sprint 4 | Total |
-|---|---:|---:|---:|---:|---:|
-| E1 Motor de optimización (IA) | 16 | 8 | 5 | 0 | 29 |
-| E2 Registro de telas y piezas | 0 | 8 | 8 | 5 | 21 |
-| E3 Plataforma web y resultados | 3 | 0 | 5 | 8 | 16 |
-| **Total** | **19** | **16** | **18** | **13** | **66** |
-
-### Supuestos y riesgos de la estimación
-
-**Supuestos:**
-
-- Ambas integrantes sostienen 20 horas semanales durante los cuatro Sprints.
-- Los casos de prueba tienen hasta 20 piezas y las librerías elegidas (Shapely, DEAP y el framework web) funcionan en los equipos disponibles.
-- El factor de enfoque de 0,8 cubre el aprendizaje, la revisión entre pares y los imprevistos menores.
-- Las historias de referencia (HU-03 de 3 puntos, HU-02 de 5 y HU-01 de 8) se mantienen como base de comparación durante todo el proyecto.
-
-**Riesgos de la estimación:**
-
-| Riesgo | Efecto | Respuesta |
+| Categoría | Observación | Evidencia |
 |---|---|---|
-| No hay velocidad histórica: la de 19 puntos es una hipótesis | El plan puede ser optimista | Medir la velocidad real al cerrar el Sprint 1 y recalcular el plan con ella |
-| La geometría (HU-01) y el algoritmo genético (HU-05) son nuevos para el equipo | Pueden tardar más de lo estimado | Limitar el tiempo de investigación dentro del Sprint y dividir la historia si supera 8 puntos al refinarla |
-| Menor disponibilidad por exámenes u otros cursos | Baja la capacidad de un Sprint | Aplicar el escenario conservador y retirar primero HU-10 |
-| Integración tardía entre el motor y la web (HU-08 y HU-11) | Problemas descubiertos al final | Hito de integración el 25/11, al cerrar el Sprint 3 |
+| Continue | Descomponer cada historia en tareas con responsable, dependencias y evidencia esperada | Sprint Backlog con 18 tareas y estimación de subtareas |
+| Continue | Corregir el plan al detectar el error de capacidad (20 h semanales cada una y no 10) | Registro de seguimiento del 01/11/2026, versión 7.0 |
+| Continue | Revisión cruzada de pull requests entre las dos integrantes | Regla de la DoD v1.1 y columna En revisión del tablero |
+| Stop | Planificar sin comprobar si había algo ejecutable en `main` al inicio del Sprint | El repositorio no contiene código del motor al 11/11 |
+| Stop | Dejar el seguimiento diario sin registro: el Daily Scrum no dejó entradas ni impedimentos | Registro de seguimiento con solo dos entradas (22/10 y 01/11), ambas sin impedimentos |
+| Stop | Medir el avance con documentos del proceso en lugar de funciones demostrables | 0 puntos de historias completadas, mientras el expediente sí se actualizó cada semana |
+| Start | Entregar primero una versión mínima ejecutable de la colocación (T-01 y T-02) para destrabar las demás tareas | HU-02 y HU-03 dependen de T-02 |
+| Start | Usar el tablero de Jira desde el primer día del Sprint | Tablero creado el 01/11, después del cierre |
 
-### Velocidad inicial y actualización
+La conversación se centró en el proceso y no en personas: la causa se atribuye a la planificación y al seguimiento, no a una integrante.
 
-Al finalizar cada Sprint se registran los puntos previstos y los terminados con DoD. La velocidad observada reemplaza a la estimada a partir del Sprint 2 y se recalcula el plan con los puntos restantes. Las diferencias no se interpretan como productividad individual.
+#### Acciones de mejora
 
-| Sprint | Puntos previstos | Puntos terminados con DoD | Velocidad observada |
-|---|---:|---|---|
-| 1 | 19 | Se registra en la Review | — |
-| 2 | 16 | Futuro | — |
-| 3 | 18 | Futuro | — |
-| 4 | 13 | Futuro | — |
+| ID | Acción | Dueño | Fecha | Cómo se verifica |
+|---|---|---|---|---|
+| AM-01 | Entregar en `main` una versión mínima ejecutable de T-01 y T-02 (piezas, rollo y colocación Bottom-Left), con una prueba que pase | Fernanda (T-02) y Jimena (T-01) | 18/11/2026 | Commit en `main` enlazado en las tarjetas T-01 y T-02 de Jira |
+| AM-02 | Registrar el Daily Scrum de cada día hábil: tarea en curso, bloqueo y evidencia, en Jira y en el registro de seguimiento | Fernanda (Scrum Master) | Desde el 12/11/2026; se revisa el 24/11/2026 | Al menos una entrada por día hábil en el registro de seguimiento o movimiento en el tablero |
+| AM-03 | Reajustar el calendario de los Sprints restantes con la capacidad real y acordar con la profesora el alcance que se declara pendiente | Jimena (Product Owner) | 16/11/2026 | Entrada en el registro de seguimiento y versión del Cronograma de Entregas actualizada |
 
----
+#### Incorporación al Sprint Backlog siguiente
 
-## Cronograma de entregas y costos
-**Sección 07 · Semana 6**
-
-El proyecto va del 16/09/2026 al 07/12/2026: inicio y preparación del 16/09 al 14/10, y construcción en cuatro Sprints del 14/10 al 07/12.
-
-### Proyección de duración
-
-Sprints necesarios = redondeo hacia arriba de **puntos ÷ velocidad**, ajustado porque las historias no se dividen entre Sprints.
-
-| Alcance | Puntos | Velocidad 17 | Velocidad 19 | Velocidad 21 | ¿Cabe al 07/12? |
-|---|---:|---|---|---|---|
-| Backlog del proyecto | 66 | 3 × 17 + 11 = 62 → faltan 4 | 3 × 19 + 13 = 70 → cabe | 3 × 21 + 15 = 78 → sobran 12 | Sí, en los escenarios central y favorable |
-
-- **Conservador (17):** faltan 4 puntos. Se retira HU-10 (plantillas curvas, 5 puntos), la de menor efecto sobre el Product Goal, consultándolo antes con la profesora, y se declara como pendiente. No se reduce la DoD para aparentar cumplimiento.
-- **Central (19):** las 11 historias se completan con 4 puntos de holgura.
-- **Favorable (21):** sobran 12 puntos de capacidad. Se dedican a más casos de prueba, refinamiento y documentación; no se agregan funciones fuera del alcance sin aprobación de la profesora.
-
-### Release Plan del proyecto
-
-| Sprint | Periodo | Meta del Sprint | Historias | Puntos / capacidad |
-|---|---|---|---|---:|
-| 1 | 14/10–28/10/2026 | Motor base: colocación válida con imagen, indicadores, línea base y rotaciones; plataforma web navegable | HU-01 a HU-04 | 19 / 19 |
-| 2 | 28/10–11/11/2026 | Algoritmo genético funcional y registro validado de piezas rectas y por coordenadas | HU-05 y HU-06 | 16 / 19 |
-| 3 | 11/11–25/11/2026 | Caso completo ejecutable desde la web: rollos, prendas, tallas, cantidades y comparación base / genético / manual | HU-07 a HU-09 | 18 / 19 |
-| 4 | 25/11–07/12/2026 | Resultados visuales, órdenes de producción, piezas curvas y cierre del proyecto | HU-10 y HU-11 | 13 / 13 |
-| **Total** | | **Incremento final integrado y verificable** | **11 historias** | **66 / 70** |
-
-**Hitos de entrega:** cada Sprint termina con una Sprint Review en la que se demuestra el Incremento a la profesora y, cuando sea posible, a dueños de talleres y patronistas: 28/10 (motor base), 11/11 (optimización genética y registro de piezas), 25/11 (hito de integración: flujo completo desde la web) y 07/12 (cierre del proyecto con la demo final, el informe final y el Expediente completo).
-
-### Secuencia y control del cronograma
-
-La cadena principal es **colocación → rotaciones → algoritmo genético → ejecución web → visualización y órdenes**. El registro de piezas (HU-06) avanza en paralelo con el algoritmo genético, porque la trabaja la otra integrante. Un retraso del motor afecta al resultado integrado y se inspecciona en cada Daily Scrum.
-
-Se registra un burndown del proyecto con **fecha, puntos pendientes previstos, puntos pendientes reales, historias terminadas y motivo de variación**. Los puntos reales bajan solo al completar historias con DoD.
-
-| Corte | Pendiente previsto | Pendiente real | Acción de revisión |
-|---|---:|---|---|
-| 14/10, inicio del Sprint 1 | 66 | 66 | Confirmar capacidad y datos de prueba |
-| 28/10, cierre del Sprint 1 | 47 | Se registra en la Review | Medir la primera velocidad y reestimar lo restante |
-| 11/11, cierre del Sprint 2 | 31 | Futuro | Verificar el motor genético y la captura |
-| 25/11, cierre del Sprint 3 | 13 | Futuro | Hito de integración; decidir el alcance del Sprint 4 |
-| 07/12, cierre del Sprint 4 | 0 | Futuro | Declarar el alcance logrado y los pendientes con evidencia |
-
-Si la velocidad observada o un bloqueo hacen inviable el plan, la Product Owner propone retirar primero las historias de prioridad Media, las Developers recalculan dependencias y el equipo consulta a la profesora cuando cambia el compromiso académico. Las historias retiradas se declaran como pendientes en el informe final.
-
-### Estimación y presupuesto académico
-
-**Moneda: colones costarricenses (CRC).** Los importes son supuestos didácticos para valorar el esfuerzo; no son cotizaciones, salarios reales ni gastos efectuados. Se usa una tarifa hipotética de **₡3.000 por hora**.
-
-| Concepto | Base de cálculo | Horas | Estimación |
-|---|---|---:|---:|
-| Inicio y preparación (16/09–14/10) | 2 integrantes × 20 h × 4 semanas | 160 | ₡480.000 |
-| Sprints 1 a 3 (14/10–25/11) | 3 Sprints × 80 h | 240 | ₡720.000 |
-| Sprint 4 y cierre (25/11–07/12) | 2 integrantes × 4 h diarias × 9 días hábiles | 72 | ₡216.000 |
-| Herramientas | Python, Shapely, DEAP, framework web y GitHub de uso gratuito; ejecución local | — | ₡0 |
-| **Base estimada del proyecto** | | **472** | **₡1.416.000** |
-| Reserva de contingencia | 10 % de la base, para retrabajo o imprevistos identificados | — | ₡141.600 |
-| **Presupuesto del proyecto** | **Base + contingencia** | | **₡1.557.600** |
-
-**Costo por Sprint:** 80 h × ₡3.000 = ₡240.000 en los Sprints 1 a 3 y ₡216.000 en el Sprint 4 (72 h). **Costo de los cuatro Sprints:** ₡936.000; el resto de la base corresponde al inicio y la preparación.
-
-Las horas incluyen eventos de Scrum, pruebas, documentación, informe y demo. Equipos, electricidad e internet existentes no se valoran por falta de datos, por lo que este presupuesto no representa un costo comercial completo.
-
-### Seguimiento de costos
-
-Cada integrante registra sus horas reales por semana y actividad. En cada Review se comparan las horas previstas y reales y el costo valorado a la tarifa hipotética. Un costo valorado del esfuerzo no se presenta como dinero pagado.
-
-| Corte | Base acumulada prevista, sin reserva | Esfuerzo real valorado | Explicación |
-|---|---:|---|---|
-| 14/10, antes del Sprint 1 | ₡480.000 | Se registra | Inicio y preparación |
-| 28/10, cierre del Sprint 1 | ₡720.000 | Se registra | Preparación + un Sprint |
-| 11/11, cierre del Sprint 2 | ₡960.000 | Futuro | Preparación + dos Sprints |
-| 25/11, cierre del Sprint 3 | ₡1.200.000 | Futuro | Preparación + tres Sprints |
-| 07/12, cierre del proyecto | ₡1.416.000 | Futuro | Preparación + cuatro Sprints y cierre |
-
-Toda utilización de la reserva se documenta con fecha, causa, importe y saldo. Si cambian la disponibilidad, la tarifa de referencia, el número de Sprints o las herramientas, se recalcula el presupuesto, conservando la comparación con esta versión.
-## Plan de comunicaciones y tablero de trabajo
-**Sección 10 · Semana 9**
-
-Define quién recibe qué información, cuándo y por qué canal, y cómo se hace visible el trabajo del equipo. Parte del registro de interesados y del mapa Poder-Interés.
-
-### Plan de comunicaciones
-
-| Interesado | Poder / interés | Estrategia | Información que necesita | Frecuencia y evento | Canal | Responsable |
-|---|---|---|---|---|---|---|
-| Dueños/gerentes de talleres | 5 / 5 | Gestionar de cerca | Incremento logrado, indicadores de aprovechamiento y desperdicio, cambios de alcance | Cada Sprint Review (cada dos semanas); aviso el mismo día si cambia el alcance | Demostración presencial o virtual y correo con resumen | Jimena (Product Owner) |
-| Patronistas | 4 / 5 | Gestionar de cerca | Formas de pieza admitidas, validaciones y casos de prueba | Sprint Review de los Sprints 2 y 4 (registro de piezas); consultas puntuales al refinar historias | Sesión de validación y correo | Jimena (Product Owner) |
-| Profesora evaluadora | 5 / 4 | Gestionar de cerca | Avance del Expediente, decisiones de alcance e impedimentos que afecten la evaluación | Semanal, en cada clase; inmediato si un cambio afecta un compromiso académico | Clase, repositorio GitHub (commits e historial de versiones) y correo institucional | Fernanda (Scrum Master) |
-| Operarios de corte | 2 / 4 | Mantener informado | Cómo leer la distribución propuesta y la numeración de piezas | Sprint Review del Sprint 4 | Demostración y guía breve de lectura del trazo | Fernanda |
-| Equipo desarrollador | 3 / 5 | Mantener informado | Estado de tareas, bloqueos y decisiones técnicas | Diario, en el Daily Scrum de 15 minutos | Tablero de trabajo y grupo de mensajería del equipo | Fernanda (Scrum Master) |
-| Área contable/financiera | 4 / 2 | Mantener satisfecha | Costo estimado del proyecto y desperdicio comparado | Al cierre del proyecto (07/12) o si cambia el presupuesto | Resumen del informe final | Jimena |
-| Compras/inventario de tela | 2 / 3 | Monitorear | Datos de rollos que se registran (ancho, largo, tipo) | Al refinar HU-07, antes del Sprint 3 | Correo | Jimena |
-| Proveedores de tela | 1 / 2 | Monitorear | Ninguna periódica; solo consultas sobre anchos estándar de rollo | Si se necesita | Correo | Jimena |
-
-### Reglas del equipo
-
-- **Tiempos de respuesta:** los mensajes del equipo se responden en un máximo de 24 horas hábiles; un bloqueo se comunica el mismo día en que aparece, sin esperar al siguiente Daily Scrum.
-- **Dónde se decide qué:** el orden y el alcance del Product Backlog los decide la Product Owner; la forma técnica de cumplir el Sprint Goal la deciden las Developers en el Sprint Planning y el Daily Scrum; un cambio que afecte un compromiso académico se consulta con la profesora.
-- **Registro de decisiones:** toda decisión de alcance, fecha o costo se anota en el registro de seguimiento del Expediente con su fecha y motivo. Lo que se acuerda por mensajería se pasa al tablero o al Expediente el mismo día.
-
-### Escalamiento de impedimentos y conflictos
-
-1. Quien detecta el impedimento lo marca en su tarjeta y lo comunica en el Daily Scrum o por mensaje el mismo día.
-2. La Scrum Master facilita una solución en un plazo de 24 horas hábiles.
-3. Si pone en riesgo el Sprint Goal, la Product Owner decide qué ajustar del Sprint Backlog, sin alargar el Sprint.
-4. Si afecta el alcance comprometido o la fecha del 07/12, se consulta con la profesora.
-
-Un desacuerdo entre las integrantes se conversa primero de forma directa; si no se resuelve, la Scrum Master facilita la discusión con criterios del Product Goal y la DoD, y como último paso se consulta a la profesora.
-
-### Tablero de trabajo
-
-**Herramienta:** Jira Software, proyecto Scrum con clave MER; los límites WIP se configuran como máximo de cada columna del tablero. **Enlace:** [Tablero MER – Gestión de Mermas](https://mariajimenajr14-1793571646419.atlassian.net/jira/software/projects/MER/boards/2/backlog). Las historias son incidencias de tipo Historia con sus puntos y su épica (E1, E2 o E3); las tareas T-01 a T-18 son subtareas de su historia, con su responsable asignada. Las historias de los Sprints siguientes esperan en el Backlog de Jira, fuera del Sprint activo.
-
-| Columna | Significado | Límite WIP | Regla de entrada |
-|---|---|---:|---|
-| Backlog (vista aparte) | Historias de los Sprints 2 a 4, ordenadas por prioridad | — | Historia con criterios de aceptación, puntos y épica |
-| Por hacer | Tareas del Sprint Backlog aún no iniciadas | — | Tarea con responsable, historia asociada y evidencia esperada |
-| En curso | Tareas que alguien está desarrollando | 2 (una por integrante) | La responsable la mueve al empezar; no inicia otra hasta liberar la actual |
-| En revisión | Tareas terminadas por su responsable, en espera de revisión de la otra integrante | 2 | Pull request abierto, pruebas pasando y evidencia adjunta |
-| Terminada | Tareas revisadas que cumplen la DoD | — | Revisión aprobada e integración a `main` |
-
-**Justificación del WIP:** con dos integrantes, una tarea en curso por persona evita trabajo duplicado y obliga a terminar antes de empezar otra. El límite de dos en revisión impide que se acumule trabajo sin revisar, porque cada revisión la hace la otra integrante.
-
-**Incidencias del Sprint 1:** las historias HU-01 a HU-04 y sus subtareas, T-01 a T-18, cada una con su responsable visible según la tabla del Sprint Backlog.
-
-**Regla para mover a Terminada:** una tarea pasa a Terminada solo con su evidencia, la revisión de la otra integrante y la integración a `main`. Una historia está terminada cuando todas sus tareas lo están y cumple sus criterios de aceptación y la DoD.
+El siguiente Sprint es el **Sprint 2 (11/11–24/11/2026)**, iniciado en Jira con HU-01 a HU-04 (19 puntos) y las tareas AM-01 a AM-03, M-01, M-02, M-05 y M-06; el 15/11 se agregó M-07. Es el último Sprint, porque la entrega final es el 24/11. AM-01 pasa a ser la primera tarea del Sprint, antes de cualquier historia nueva. AM-02 se aplica en cada Daily Scrum. AM-03 se resuelve antes de la Planning. En la siguiente Retrospective se revisa el cumplimiento de las tres acciones.
