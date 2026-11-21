@@ -21,6 +21,7 @@
 | 7.0 | Clase 7 | 01/11/2026 | Plan de comunicaciones, tablero en Jira, replanificación a 4 Sprints y 11 historias, y DoD v1.1. |
 | 8.0 | Clase 8 | 08/11/2026 | Matriz de riesgos, plan de mitigación, plan de adquisiciones y acciones de mitigación en el Sprint Backlog. |
 | 9.0 | Clase 9 | 11/11/2026 | Acta de Sprint Review y Sprint Retrospective del Sprint 1, Release Plan replanificado y matriz RACI. |
+| 10.0 | Clase 10 | 18/11/2026 | Registro de Solicitudes de Cambio, flujo de cambios y Working Agreements del equipo. |
 
 ## Contenido
 
@@ -144,6 +145,14 @@
   - [Sprint Backlog del Sprint 2](#sprint-backlog-del-sprint-2)
 - [Matriz de responsabilidades (RACI)](#matriz-de-responsabilidades-raci) (en la sección de la Semana 7, junto al plan de comunicaciones)
 - [Release Plan replanificado](#release-plan-replanificado-11112026) (en el Cronograma de entregas de la Semana 6)
+
+### Semana 10
+
+- [Registro de Solicitudes de Cambio y Working Agreements](#registro-de-solicitudes-de-cambio-y-working-agreements)
+  - [Cómo gestionamos los cambios](#cómo-gestionamos-los-cambios)
+  - [Registro de Solicitudes de Cambio](#registro-de-solicitudes-de-cambio)
+  - [Working Agreements del equipo](#working-agreements-del-equipo)
+  - [Revisión y firma de los acuerdos](#revisión-y-firma-de-los-acuerdos)
 
 ---
 
@@ -1738,3 +1747,58 @@ El siguiente Sprint es el **Sprint 2 (11/11–24/11/2026)**, el último antes de
 | **Total** | | | **27** | | Jimena 14 · Fernanda 13 |
 
 Los puntos de las subtareas no se usan como velocidad.
+
+---
+
+**Semana 10**
+
+---
+
+## Registro de Solicitudes de Cambio y Working Agreements
+
+Hasta ahora los cambios del proyecto se decidieron conversando y quedaron anotados en el registro de seguimiento y en el Acta de Sprint Review: la replanificación a 11 historias del 01/11 y el recorte de alcance del 11/11, que fue el más fuerte. Esta sección ordena esa práctica. Define cómo tramitamos un cambio siendo dos personas con roles compartidos, deja el registro con los cambios reales que ya tomamos y fija los acuerdos de trabajo que salen de lo que nos pasó en el Sprint 1 y de los riesgos del proyecto.
+
+### Cómo gestionamos los cambios
+
+Un cambio puede venir del dueño del taller o de la patronista en una Review, de la profesora, del calendario del curso o de nosotras mismas. Jimena, como Product Owner, lo registra el mismo día en el tablero MER de Jira, con la etiqueta `cambio`, y en el registro de esta sección. Las dos lo evaluamos como Developers en un máximo de 24 horas hábiles: cuántos puntos son, qué historia desplazan en el release, cuántas horas cuestan frente a la holgura y a la reserva de ₡141.600, y qué riesgo de la matriz tocan.
+
+Jimena decide sobre el orden y el alcance del Product Backlog. Si el cambio toca la fecha de entrega del 24/11, el Product Goal o los criterios de éxito, decide la profesora, como indica la matriz RACI, y no lo presentamos como aceptado antes de su respuesta. Fernanda le informa ese mismo día y el resultado se presenta en la Sprint Review.
+
+Mientras dure el Sprint 2 (11/11–24/11), el Sprint Goal (algoritmo genético, comparación en los tres casos sintéticos, demo e informe final) no se negocia. Un cambio solo entra si sale otro de igual tamaño de los 13 puntos comprometidos o de las 16 horas de holgura que hoy cubren M-01, M-06 y M-07. Como después del 24/11 no hay otro Sprint, lo que no cabe se declara como pendiente en el informe final y no se pospone sin fecha.
+
+### Registro de Solicitudes de Cambio
+
+Las solicitudes CR-01 a CR-04 son reales: salen de la Sprint Review del 11/11, donde las decisiones se tomaron sin un registro propio, y las registramos ahora. CR-05 es simulada y está marcada como tal para mostrar cómo se trataría un cambio pedido a mitad del Sprint 2.
+
+| ID | Fecha | Solicitante | Descripción | Impacto | Decisión y justificación | Entra en | Responsable |
+|---|---|---|---|---|---|---|---|
+| CR-01 | 11/11/2026 | Calendario del curso y Product Owner | Cerrar el proyecto el 24/11, fecha de la entrega final en la Semana 11, y no el 07/12. El Sprint 2 original (28/10–11/11) no se ejecutó y los Sprints 3 y 4 se reemplazan por un único Sprint 2 (11/11–24/11). | Alcance: lo que no cabe se trata en CR-02 y CR-03. Tiempo: el cierre se adelanta 13 días. Costo: el esfuerzo previsto baja de 472 h (₡1.416.000) a 320 h (₡960.000). Riesgo alto: el Objetivo 1 y la parte web del Product Goal quedan cubiertos solo en parte. | **Aprobado.** No es opcional porque la fecha la fija el curso. La profesora observó la Review y pidió declarar con claridad lo pendiente. | Sprint 2 | Jimena (Product Owner) |
+| CR-02 | 11/11/2026 | Product Owner, a partir de la Review del Sprint 1 | Retirar HU-10 (piezas con plantillas curvas, prioridad Media). | −5 puntos. Sin efecto en la fecha ni horas gastadas. Riesgo bajo: el patronista dijo en la Review que las piezas curvas pueden esperar. | **Aprobado.** Es la primera historia que se retira, según la regla del Cronograma de Entregas. Pasa a pendiente y se declara en el informe final. | No entra | Jimena |
+| CR-03 | 11/11/2026 | Profesora (observación en la Review) y Product Owner | Dejar HU-06, HU-07, HU-08 y HU-11 como pendientes y limitar el Sprint 2 a HU-05 y HU-09. | −29 puntos. No caben antes del 24/11. Riesgo alto: no habrá registro de piezas, rollos y prendas ni ejecución de la optimización desde la web; el caso se demuestra con el motor y la plataforma navegable. | **Aprobado.** HU-05 y HU-09 son lo que cierra el Objetivo específico 3 y el núcleo del Product Goal. Las cuatro historias se declaran pendientes en el informe final. | No entra | Jimena |
+| CR-04 | 11/11/2026 | Patronista | Dar prioridad al registro de piezas que rechace formas inválidas (HU-06). | +8 puntos frente a 6 de holgura del Sprint 2, que ya están asignados a M-01, M-06 y M-07. Riesgo medio: desplazaría el informe y el ensayo de la demo. | **Diferido.** HU-06 es la primera historia que se recupera si sobra capacidad, como pidió la patronista. | Solo si sobra capacidad en el Sprint 2 | Jimena |
+| CR-05 (simulada) | 18/11/2026 | Dueño de taller | Mostrar el costo en colones del material desperdiciado junto a los indicadores de HU-09, a mitad del Sprint 2. | +5 puntos (estimación preliminar, sin refinar). No cabe en el Sprint 2. Riesgo medio: requiere el precio de la tela, un dato que el sistema no registra. | **Diferido a una fase posterior.** Pondría en riesgo el Sprint Goal y el costo del desperdicio está en Fuera del alcance. | Fase posterior | Jimena |
+
+Entre CR-02 y CR-03 el proyecto pasa de 66 a 32 puntos entregados. Por épica, y una vez cerrado el Sprint 2, el motor de optimización (E1) queda completo con sus 29 puntos; el registro de telas y piezas (E2) no se entrega, con 21 puntos pendientes; y la plataforma web (E3) entrega solo la navegación de HU-04 (3 de 16 puntos). Por eso el informe final y la demo presentan el motor funcionando con los tres casos sintéticos y la plataforma navegable, y declaran como pendiente lo que se registra en CR-02 y CR-03. De las cinco solicitudes, tres se aprobaron, dos se difirieron y ninguna se rechazó.
+
+### Working Agreements del equipo
+
+Los diez acuerdos salen de dos fuentes: lo que la Retrospective del Sprint 1 mostró que hicimos mal (integrar al final con pull requests grandes, un Daily Scrum sin registro, un tablero creado después del Sprint y un Expediente actualizado en bloque) y los riesgos del plan, sobre todo la capacidad de dos personas (R-02) y el cierre apretado del Sprint 2 (R-08). Están redactados en positivo y cada uno se puede cumplir o incumplir.
+
+| ID | Acuerdo | Por qué lo acordamos | Cómo lo verificamos |
+|---|---|---|---|
+| WA-01 | **Comunicación.** Respondemos los mensajes del equipo en un máximo de 24 horas hábiles y avisamos un bloqueo el mismo día en que aparece. | Somos dos y casi todas las tareas dependen de la otra (por ejemplo, T-14 dependía de T-02). Un mensaje sin respuesta detiene la cadena colocación → algoritmo genético. | Historial del grupo de mensajería; impedimentos en Jira con su fecha |
+| WA-02 | **Comunicación.** Pasamos al tablero o al Expediente, el mismo día, lo que acordamos por mensajería, y anotamos en el registro de seguimiento toda decisión de alcance, fecha o costo con su motivo. | Los cambios del 11/11 se decidieron en la Review sin registro propio, y el Expediente del Sprint 1 se actualizó en bloque al cierre. | Cada decisión tiene su entrada con la fecha del mismo día |
+| WA-03 | **Ritmo.** Hacemos el Daily Scrum de 15 minutos cada día hábil y registramos la tarea en curso, el bloqueo y la evidencia (AM-02). | El registro de seguimiento no tiene entradas diarias del Sprint 1. | Al menos una entrada por día hábil en el registro o movimiento en el tablero |
+| WA-04 | **Ritmo.** Mantenemos una sola tarea en curso por persona y tratamos en el Daily cualquier tarjeta que lleve más de 2 días hábiles en "En curso". | En un Sprint de diez días hábiles con entrega fija, dos días detenidos son el 20 % del Sprint. | Tablero de Jira con el límite WIP de 2 |
+| WA-05 | **Ritmo.** Informamos nuestra disponibilidad real de la semana en el Planning y avisamos el mismo día si baja de 15 horas semanales. | Todo el plan supone 20 horas semanales cada una (velocidad de 19 puntos); si baja, lo primero que se pierde es la holgura de M-01, M-06 y M-07 (R-02). | Disponibilidad anotada en el Planning; mensaje de aviso con fecha |
+| WA-06 | **Calidad.** Revisamos el pull request de la otra en menos de 24 horas e integramos a `main` cada subtarea terminada (AM-01). | En el Sprint 1 casi todas las revisiones se concentraron en los últimos días, con pull requests grandes y revisiones apuradas. | Pull request enlazado en la tarjeta de Jira, con fecha de apertura y de aprobación |
+| WA-07 | **Calidad.** Movemos una tarjeta a Terminada solo con su evidencia, la revisión de la otra y la DoD cumplida, y hacemos un commit del Expediente al cerrar cada historia (AM-03). | La DoD v1.1 ya lo exige, y el Expediente del Sprint 1 se actualizó de golpe al cerrar. | Tarjeta con evidencia adjunta; un commit del Expediente por historia terminada |
+| WA-08 | **Decisiones.** Jimena decide qué se hace y en qué orden; las dos decidimos cómo se hace, y ninguna decide por la otra lo que le toca responder. Las decisiones técnicas se cierran con puño de cinco; si no llegamos a 3 o más, hacemos una spike de máximo 4 horas con criterios medibles y decidimos con su resultado. En alcance y prioridad desempata Jimena, y en la forma técnica, la responsable de la historia en Jira. | Con dos personas un desacuerdo es un empate. M-01, la spike de rendimiento del algoritmo genético, es el modelo: los parámetros se deciden con tiempos medidos y no con opiniones. | Decisiones anotadas en el registro de seguimiento con el resultado del puño de cinco |
+| WA-09 | **Conflictos.** Planteamos un desacuerdo cuando aparece, con hechos observables y no con intenciones, y primero lo conversamos entre las dos. Si en 24 horas hábiles no se resuelve, Fernanda, como Scrum Master, facilita con el Sprint Goal y la DoD como referencia, y como último paso consultamos a la profesora. | Las dos somos Developers y además cada una tiene un rol (Product Owner y Scrum Master), así que un desacuerdo de alcance mezcla roles. Poner el Sprint Goal por delante evita que sea personal. | Entrada en el registro de seguimiento con fecha, postura de cada una y resolución |
+| WA-10 | **Cambios.** Registramos todo cambio de alcance, fecha o costo en el Registro de Solicitudes de Cambio antes de aplicarlo. En el Sprint 2 solo entra si sale otro de igual tamaño, y consultamos a la profesora si afecta un compromiso académico. | CR-01 a CR-04 se decidieron en la Review sin registro, y a partir del 24/11 ya no habrá otro Sprint donde absorber un cambio. | Cada cambio tiene su CR, con decisión anterior a su aplicación |
+
+### Revisión y firma de los acuerdos
+
+Los diez acuerdos se cerraron con puño de cinco, con 3 o más de ambas integrantes en cada uno. Quedan firmados por María Jimena Jara Rojas y María Fernanda Sibaja Campos con el commit que los incorpora y con la entrada 10.0 del historial de versiones.
+
+Los acuerdos amplían las Reglas del equipo de la Semana 7, que se mantienen, y convierten en regla las acciones de mejora AM-01 a AM-03 de la Retrospective del Sprint 1. Se revisan en la Retrospective del Sprint 2, el 24/11/2026, junto con el cumplimiento de AM-01 a AM-03; cualquier ajuste se registra con fecha y se refleja en una nueva versión del Expediente.
