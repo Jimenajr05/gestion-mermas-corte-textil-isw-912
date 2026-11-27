@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="720" height="480" font-family="Segoe UI, Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="720" height="480" fill="#ffffff"/>
+
+  <text x="412" y="32" text-anchor="middle" font-size="17" font-weight="600" fill="#1e2a5a">Mapa de calor de riesgos (probabilidad × impacto)</text>
+
+  <!-- Etiquetas de probabilidad -->
+  <g font-size="13" font-weight="600" fill="#4a5a85" text-anchor="end">
+    <text x="118" y="111">Prob. alta (3)</text>
+    <text x="118" y="233">Prob. media (2)</text>
+    <text x="118" y="355">Prob. baja (1)</text>
+  </g>
+
+  <!-- Fila: probabilidad alta -->
+  <rect x="130" y="56" width="180" height="110" rx="7" fill="#FBE7B5"/>
+  <text x="220" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#78350f">Vigilar · 3</text>
+  <text x="220" y="122" text-anchor="middle" font-size="16" fill="#a16207">—</text>
+
+  <rect x="322" y="56" width="180" height="110" rx="7" fill="#F4B6AE"/>
+  <text x="412" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#7f1d1d">Alta prioridad · 6</text>
+  <text x="412" y="122" text-anchor="middle" font-size="18" font-weight="700" fill="#7f1d1d">R-06</text>
+
+  <rect x="514" y="56" width="180" height="110" rx="7" fill="#F4B6AE"/>
+  <text x="604" y="80" text-anchor="middle" font-size="12" font-weight="600" fill="#7f1d1d">Alta prioridad · 9</text>
+  <text x="604" y="122" text-anchor="middle" font-size="18" font-weight="700" fill="#7f1d1d">R-01</text>
+
+  <!-- Fila: probabilidad media -->
+  <rect x="130" y="178" width="180" height="110" rx="7" fill="#D4EAD6"/>
+  <text x="220" y="202" text-anchor="middle" font-size="12" font-weight="600" fill="#14532d">Aceptar · 2</text>
+  <text x="220" y="244" text-anchor="middle" font-size="16" fill="#15803d">—</text>
+
+  <rect x="322" y="178" width="180" height="110" rx="7" fill="#FBE7B5"/>
+  <text x="412" y="202" text-anchor="middle" font-size="12" font-weight="600" fill="#78350f">Vigilar · 4</text>
+  <text x="412" y="244" text-anchor="middle" font-size="18" font-weight="700" fill="#78350f">R-07</text>
+
+  <rect x="514" y="178" width="180" height="110" rx="7" fill="#F4B6AE"/>
+  <text x="604" y="202" text-anchor="middle" font-size="12" font-weight="600" fill="#7f1d1d">Alta prioridad · 6</text>
+  <text x="604" y="236" text-anchor="middle" font-size="17" font-weight="700" fill="#7f1d1d">R-02 · R-03</text>
+  <text x="604" y="258" text-anchor="middle" font-size="17" font-weight="700" fill="#7f1d1d">R-04 · R-05 · R-08</text>
+
+  <!-- Fila: probabilidad baja -->
+  <rect x="130" y="300" width="180" height="110" rx="7" fill="#D4EAD6"/>
+  <text x="220" y="324" text-anchor="middle" font-size="12" font-weight="600" fill="#14532d">Aceptar · 1</text>
+  <text x="220" y="366" text-anchor="middle" font-size="18" font-weight="700" fill="#14532d">R-13</text>
+
+  <rect x="322" y="300" width="180" height="110" rx="7" fill="#D4EAD6"/>
+  <text x="412" y="324" text-anchor="middle" font-size="12" font-weight="600" fill="#14532d">Aceptar · 2</text>
+  <text x="412" y="366" text-anchor="middle" font-size="18" font-weight="700" fill="#14532d">R-12</text>
+
+  <rect x="514" y="300" width="180" height="110" rx="7" fill="#FBE7B5"/>
+  <text x="604" y="324" text-anchor="middle" font-size="12" font-weight="600" fill="#78350f">Vigilar · 3</text>
+  <text x="604" y="366" text-anchor="middle" font-size="17" font-weight="700" fill="#78350f">R-09 · R-10 · R-11</text>
+
+  <!-- Etiquetas de impacto -->
+  <g font-size="13" font-weight="600" fill="#4a5a85" text-anchor="middle">
+    <text x="220" y="434">Impacto bajo (1)</text>
+    <text x="412" y="434">Impacto medio (2)</text>
+    <text x="604" y="434">Impacto alto (3)</text>
+  </g>
+
+  <text x="412" y="464" text-anchor="middle" font-size="11" fill="#6b7280">El número de cada cuadro es la prioridad (probabilidad × impacto). Las oportunidades O-01 y O-02 no se ubican en el mapa.</text>
+</svg>
