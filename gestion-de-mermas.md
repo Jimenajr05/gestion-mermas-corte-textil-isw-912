@@ -166,7 +166,7 @@
   - [Acta de Sprint Retrospective](#acta-de-sprint-retrospective)
   - [Sprint Backlog del Sprint 2](#sprint-backlog-del-sprint-2)
 - [Matriz de responsabilidades (RACI)](#matriz-de-responsabilidades-raci)
-- [Release Plan replanificado](#release-plan-replanificado-11112026) 
+- [Release Plan replanificado](#release-plan-replanificado-11112026) (en el Cronograma de entregas de la Semana 6)
 
 ### Semana 10
 
@@ -1753,15 +1753,15 @@ Se agregan al Sprint Backlog y al tablero de Jira como tareas con la etiqueta `r
 
 | Ítem | Riesgo | Acción | Sprint | Responsable | Horas | Capacidad | Estado | Evidencia esperada |
 |---|---|---|---|---|---:|---|---|---|
-| M-01 | R-04 | Spike de rendimiento del algoritmo genético con 20 piezas y parámetros por defecto | Sprint 2, hasta el 11/11 | Jimena | 3 | Holgura del Sprint 2 (3 puntos ≈ 8,1 h) | Por hacer | Tabla de tiempos y parámetros elegidos |
-| M-02 | R-05 | Documentar el formato de datos entre motor y web | Sprint 2, hasta el 11/11 | Fernanda | 2 | Holgura del Sprint 2 | Por hacer | Documento en el repositorio |
-| M-03 | R-03 | Spike de geometría de máximo 4 h, solo si se activa el disparador | Sprint 2 o 3 | Fernanda | 0 a 4 | Reserva de contingencia | Condicional | Registro del problema y su solución |
-| M-04 | R-02 | Sesiones de traspaso de los módulos de colocación y algoritmo genético | Sprint 3 | Fernanda | 2 | Holgura del Sprint 3 (1 punto ≈ 2,7 h) y reserva | Por hacer | Instrucciones actualizadas y registro de la sesión |
-| M-05 | R-06, O-02 | Solicitud a un taller o patronista y demostración corta | Sprint 3, antes del 18/11 | Jimena | 2 | Holgura del Sprint 3 y reserva | Por hacer | Mensaje enviado y respuesta registrada |
-| M-06 | R-08 | Esqueleto del informe final y lista de evidencias | Sprint 3, antes del 25/11 | Fernanda | 2 | Reserva | Por hacer | Esqueleto en el repositorio |
-| M-07 | R-11 | Ensayo de la demo y material de respaldo | Sprint 4 | Fernanda | 2 | Dentro de las 12 h de cierre | Por hacer | Capturas o video de respaldo |
+| M-01 | R-04 | Spike de rendimiento del algoritmo genético con 20 piezas y parámetros por defecto | Sprint 2, hasta el 11/11 | Jimena | 3 | Holgura del Sprint 2 (3 puntos ≈ 8,1 h) | Terminada (13/11) | Tabla de tiempos y parámetros elegidos |
+| M-02 | R-05 | Documentar el formato de datos entre motor y web | Sprint 2, hasta el 11/11 | Fernanda | 2 | Holgura del Sprint 2 | Por hacer (backlog) | Documento en el repositorio |
+| M-03 | R-03 | Spike de geometría de máximo 4 h, solo si se activa el disparador | Sprint 2 o 3 | Fernanda | 0 a 4 | Reserva de contingencia | No activada | Registro del problema y su solución |
+| M-04 | R-02 | Sesiones de traspaso de los módulos de colocación y algoritmo genético | Sprint 3 | Fernanda | 2 | Holgura del Sprint 3 (1 punto ≈ 2,7 h) y reserva | Por hacer (backlog) | Instrucciones actualizadas y registro de la sesión |
+| M-05 | R-06, O-02 | Solicitud a un taller o patronista y demostración corta | Sprint 3, antes del 18/11 | Jimena | 2 | Holgura del Sprint 3 y reserva | Terminada (17/11) | Mensaje enviado y respuesta registrada |
+| M-06 | R-08 | Esqueleto del informe final y lista de evidencias | Sprint 3, antes del 25/11 | Fernanda | 2 | Reserva | Terminada (20/11) | Esqueleto en el repositorio |
+| M-07 | R-11 | Ensayo de la demo y material de respaldo | Sprint 4 | Fernanda | 2 | Dentro de las 12 h de cierre | Terminada (23/11) | Capturas o video de respaldo |
 
-**Actualización del 11/11/2026:** con la renumeración de los Sprints (ver Release Plan replanificado), M-01, M-05, M-06 y M-07 están en el Sprint 2 (11/11–25/11): M-01 es la primera tarea, M-06 se adelanta al 20/11 y M-07 tiene fecha 23/11. M-02 vuelve al backlog porque HU-08 queda pendiente, y M-03 y M-04 quedan en el backlog hasta que se activen. En Jira son MER-47 a MER-53. Las menciones al 25/11, al 07/12 y a los Sprints 3 y 4 en esta sección corresponden al plan original de la Semana 8.
+**Actualización del 11/11/2026:** con la renumeración de los Sprints (ver Release Plan replanificado), M-01, M-05, M-06 y M-07 están en el Sprint 2 (11/11–25/11): M-01 es la primera tarea, M-06 se adelanta al 20/11 y M-07 tiene fecha 23/11. M-02 vuelve al backlog porque HU-08 queda pendiente, y M-03 y M-04 quedan en el backlog hasta que se activen. En Jira son MER-47 a MER-53. Las menciones al 25/11, al 07/12 y a los Sprints 3 y 4 en esta sección corresponden al plan original de la Semana 8. En la tabla, la columna Sprint conserva ese plan y la columna Estado muestra el estado al 25/11/2026, igual que en Jira.
 
 **Estado al 22/11/2026:** M-01 terminada el 13/11, M-05 terminada el 17/11 (mensajes enviados; sin confirmación, se activó la contingencia de R-06) y M-06 terminada el 20/11. M-07 está programada para el 23/11. M-02, M-03 y M-04 siguen en el backlog sin activarse.
 
